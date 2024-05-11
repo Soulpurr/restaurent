@@ -7,12 +7,12 @@ import "./Navbar.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const Navbar = ({manageLanguage}) => {
+const Navbar = ({ manageLanguage }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [selectedOption, setselectedOption] = useState("English");
   const handleChange = (e) => {
     setselectedOption(e.target.value);
-    manageLanguage(e.target.value)
+    manageLanguage(e.target.value);
   };
   const router = useRouter();
   return (
@@ -42,7 +42,13 @@ const Navbar = ({manageLanguage}) => {
         </li>
       </ul>
       <div className="space-x-3 app__navbar-login">
-        <select className="bg-green-200 p-2 rounded-xl" onChange={handleChange} value={selectedOption} name="" id="">
+        <select
+          className="bg-green-700 p-2 rounded-xl"
+          onChange={handleChange}
+          value={selectedOption}
+          name=""
+          id=""
+        >
           <option value="english">English</option>
           <option value="estonian">Estonian</option>
           <option value="russian">Russian</option>
@@ -53,6 +59,17 @@ const Navbar = ({manageLanguage}) => {
           Book Table
         </a>
       </div>
+      <select
+        className="bg-green-700 p-2 rounded-xl sm:hidden"
+        onChange={handleChange}
+        value={selectedOption}
+        name=""
+        id=""
+      >
+        <option value="english">English</option>
+        <option value="estonian">Estonian</option>
+        <option value="russian">Russian</option>
+      </select>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
           color="#fff"

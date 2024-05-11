@@ -12,8 +12,8 @@ const FindUs = () => (
         Find Us
       </h1>
       <div className="app__wrapper-content">
-        <p className="p__opensans">
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G
+        <p className="p__opensans text-xl">
+        Pärnu 67-71, Paide, 72718 Järva maakond, Estonia
         </p>
         <p
           className="p__cormorant"

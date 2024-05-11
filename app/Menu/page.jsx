@@ -17,7 +17,7 @@ function Page() {
   console.log(menuLanguage);
   const [type, settype] = useState("Starter");
   return (
-    <div className="bg-black">
+    <div className="bg-black text-white">
       <Navbar manageLanguage={manageMenuLang} />
       <div
         className={`z-50 fixed inset-0 flex items-center justify-center sm:left-[14%] ${
@@ -26,7 +26,7 @@ function Page() {
       >
         <Modal manageOpen={manageOpen} />
       </div>
-      <div className="flex flex-col sm:flex-row p-10 justify-center mt-10">
+      <div className="  flex flex-col sm:flex-row p-10 justify-center mt-2 sm:mt-10">
         <div className=" sm:block sm:w-fit lg:w-[30%]">
           <div className="text-5xl font-bold ">Menu</div>
           <div className="flex  flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-8 mt-6 overflow-x-scroll no-scrollbar">
@@ -48,7 +48,7 @@ function Page() {
         <div className=" flex flex-wrap h-fit justify-center ">
           
           {menuData[type].map((item, index) => (
-            <div key={index} className="">
+            <div key={index} className="text-white">
               <Card
                 title={
                   item[`name${menuLanguage.charAt(0).toUpperCase() + menuLanguage.slice(1)}`]

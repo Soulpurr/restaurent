@@ -13,17 +13,17 @@ function Card({ title, desc, price, type,manageOpen }) {
         <Image src={"/salmon.jpg"} height={400} width={700} />
       </div> */}
       <div className="text-md font-bold flex ml-2 ">{title}</div>
-      <div className="">
+      {/* <div className="">
         <div className="flex space-x-2 items-center">
           <IoMdArrowDropup color="black" size={30} />
           <div className="text-sm font-serif">{type}</div>
         </div>
-      </div>
+      </div> */}
       {typeof price != "object" ? (
         <div className="text-xl font-bold ml-2">€{price}</div>
       ) : (
         <div className="flex flex-row space-x-8">
-          <select value={selectedOption} onChange={handleChange} name="" id="">
+          <select className="bg-gray-700 rounded-lg" value={selectedOption} onChange={handleChange} name="" id="">
             {Object.keys(price).map((item) => (
               <option value={item}>{item.toUpperCase()}</option>
             ))}

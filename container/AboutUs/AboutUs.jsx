@@ -32,7 +32,7 @@ const AboutUs = ({ aboutdata, know, history }) => (
         <Image src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">{history?.content}</p>
         <button type="button" className="custom__button">
-         {know?.name}
+          {know?.name}
         </button>
       </div>
     </div>
