@@ -4,7 +4,7 @@ import Card from "@/components/Card/Card";
 import Modal from "@/components/Modal/Modal";
 import React, { useState } from "react";
 
-function page() {
+function Page() {
   const [open, setopen] = useState(false);
   let categories = [
     "Drinks",
@@ -1731,4 +1731,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
