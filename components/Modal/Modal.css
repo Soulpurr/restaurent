@@ -41,11 +41,14 @@
     width: 55px;
     border-radius: 50%;
     border: none;
-    background: #00e673;
+    background: #e60008;
     margin-top: 20px;
     margin-bottom: -25px;
     cursor: pointer;
-    transition: 0.3s all
+    transition: 0.3s all;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .btn:hover {

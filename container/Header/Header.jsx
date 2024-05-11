@@ -12,9 +12,8 @@ const Header = () => (
       <SubHeading title="Chase the new flavour" />
       <h1 className="app__header-h1">The Key To Fine Dining</h1>
       <p className="p__opensans" style={{ margin: "2rem 0" }}>
-        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
-        morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
-        tellus{" "}
+        Experience flavors that will tantalize your taste buds and leave you
+        wanting more.
       </p>
       <Link href={"/Menu"} type="button" className="custom__button">
         Explore Menu
@@ -22,7 +21,7 @@ const Header = () => (
     </div>
 
     <div className="app__wrapper_img">
-      <Image src={images.welcom} alt="header_img" loading="lazy" /> 
+      <Image src={images.welcom} alt="header_img" loading="lazy" />
     </div>
   </div>
 );
