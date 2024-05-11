@@ -4,14 +4,14 @@ import { images } from '@/Constants';
 import './Chef.css';
 import Image from 'next/image';
 
-const Chef = () => (
+const Chef = ({chefdata}) => (
   <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse">
       <Image src={images.chef} alt="chef_image" />
     </div>
     <div className="app__wrapper_info">
-      <SubHeading title="Chef's word" />
-      <h1 className="headtext__cormorant">What we believe in</h1>
+      <SubHeading title={chefdata?.name} />
+      <h1 className="headtext__cormorant">{chefdata?.headline}</h1>
 
       <div className="app__chef-content">
         <div className="app__chef-content_quote">

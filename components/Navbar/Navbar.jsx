@@ -7,8 +7,13 @@ import "./Navbar.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const Navbar = () => {
+const Navbar = ({manageLanguage}) => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [selectedOption, setselectedOption] = useState("English");
+  const handleChange = (e) => {
+    setselectedOption(e.target.value);
+    manageLanguage(e.target.value)
+  };
   const router = useRouter();
   return (
     <nav className="app__navbar">
@@ -36,8 +41,13 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div className="app__navbar-login">
-       
+      <div className="space-x-3 app__navbar-login">
+        <select className="bg-green-200 p-2 rounded-xl" onChange={handleChange} value={selectedOption} name="" id="">
+          <option value="english">English</option>
+          <option value="estonian">Estonian</option>
+          <option value="russian">Russian</option>
+        </select>
+
         <div />
         <a href="/" className="p__opensans">
           Book Table

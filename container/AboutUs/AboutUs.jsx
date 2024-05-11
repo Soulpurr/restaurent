@@ -4,7 +4,7 @@ import { images } from "@/Constants";
 import "./AboutUs.css";
 import Image from "next/image";
 
-const AboutUs = () => (
+const AboutUs = ({ aboutdata, know, history }) => (
   <div
     className="app__aboutus app__bg flex__center section__padding"
     id="about"
@@ -15,14 +15,11 @@ const AboutUs = () => (
 
     <div className="app__aboutus-content flex__center">
       <div className="app__aboutus-content_about">
-        <h1 className="headtext__cormorant">About Us</h1>
+        <h1 className="headtext__cormorant">{aboutdata?.name}</h1>
         <Image src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">
-          From Farm to Fork, With Heart: We believe in sourcing fresh, local
-          ingredients and transforming them into dishes made with love and care
-        </p>
+        <p className="p__opensans">{aboutdata?.content}</p>
         <button type="button" className="custom__button">
-          Know More
+          {know.name}
         </button>
       </div>
 
@@ -31,14 +28,11 @@ const AboutUs = () => (
       </div>
 
       <div className="app__aboutus-content_history">
-        <h1 className="headtext__cormorant">Our History</h1>
+        <h1 className="headtext__cormorant">{history?.name}</h1>
         <Image src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">
-          Rooted in Tradition, Evolving with You: Our history is rich, our
-          future is full of flavor.
-        </p>
+        <p className="p__opensans">{history?.content}</p>
         <button type="button" className="custom__button">
-          Know More
+         {know?.name}
         </button>
       </div>
     </div>

@@ -11,7 +11,7 @@ import { images } from "@/Constants";
 import "./Gallery.css";
 import Image from "next/image";
 
-const Gallery = () => {
+const Gallery = ({photo}) => {
   const scrollRef = React.useRef(null);
 
   const scroll = (direction) => {
@@ -28,14 +28,12 @@ const Gallery = () => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
+        <h1 className="headtext__cormorant">{photo?.name}</h1>
         <p
           className="p__opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
-          Step into a world of stories, captured in time. Explore our photo
-          gallery, where memories come alive and emotions flicker in every
-          frame.
+          {photo?.content}
         </p>
         <button type="button" className="custom__button">
           View More
