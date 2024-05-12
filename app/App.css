@@ -9,7 +9,8 @@
   }
   
   .app__bg {
-    background: url('/bg.png'); 
+     background: url('/bg.png'); 
+    /* background-color: black; */
     background-position: center;
     background-size: cover;
     background-repeat: repeat;

@@ -3,6 +3,7 @@ import menuData from "@/Constants/menuData";
 import { Navbar } from "@/components";
 import Card from "@/components/Card/Card";
 import Modal from "@/components/Modal/Modal";
+import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
@@ -22,7 +23,7 @@ function Page() {
   const manageMenuLang = (value) => {
     setmenuLanguage(value);
   };
-  
+
   const [type, settype] = useState("Starter");
   return (
     <div className="bg-black text-white">
@@ -41,7 +42,7 @@ function Page() {
             onClick={() => {
               setmenuopen(!menuopen);
             }}
-            size={60}
+            size={40}
           />
         </div>
         <div className="sm:block sm:w-fit lg:w-[30%] mb-4 sm:mb-0">
@@ -64,11 +65,16 @@ function Page() {
                 size={40}
               />
             </div>
-
+            <div className="flex flex-row sm:hidden items-center space-x-4">
+              <div className="bg-transparent rounded-full border-2 border-gray-200 w-16">
+                <Image src={"/logo1.png"} width={200} height={200} />
+              </div>
+              <h1 className="text-xl text-yellow-400 font-serif">BUDDHA'S</h1>
+            </div>
             {Object.keys(menuData).map((item, index) => (
               <div
                 className=" rounded-lg px-1 font-bold text-md sm:text-xl h-8 sm:border-none w-fit sm:font-serif cursor-pointer hover:text-yellow-300 "
-                key={Math.floor(Math.random() * 1000000)+index}
+                key={Math.floor(Math.random() * 1000000) + index}
                 onClick={() => {
                   settype(item);
                   setmenuopen(false);
@@ -82,14 +88,17 @@ function Page() {
         </div>
 
         <div className="sm:w-[60%] flex flex-col  ">
-          <h1 className="font-extrabold text-xl sm:text-2xl text-green-400 text-center">
-            {type.toUpperCase()}
+          <h1 className="font-extrabold text-xl sm:text-2xl text-green-400 text-center mb-4">
+            {type?.toUpperCase().replace(/_/g, " ")}
           </h1>
           <div className=" flex flex-wrap h-fit justify-center ">
             {menuData[type].map((item, index) => (
-              <div key={Math.floor(Math.random() * 1000000)+index} className="text-white">
+              <div
+                key={Math.floor(Math.random() * 1000000) + index}
+                className="text-white"
+              >
                 <Card
-                key={Math.floor(Math.random() * 1000000)+index}
+                  key={Math.floor(Math.random() * 1000000) + index}
                   title={
                     item[
                       `name${

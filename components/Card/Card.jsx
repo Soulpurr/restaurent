@@ -24,7 +24,7 @@ function Card({ title, desc, price, type, manageOpen }) {
       ) : (
         <div className="flex flex-col space-y-2 spce-x-0 sm:space-y-0 sm:flex-row sm:space-x-8">
           <select
-            className="bg-gray-700 rounded-lg"
+            className="bg-gray-700 rounded-lg p-1"
             value={selectedOption}
             onChange={handleChange}
             name=""
