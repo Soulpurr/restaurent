@@ -6,8 +6,9 @@ import Image from "next/image";
 
 const AboutUs = ({ aboutdata, know, history }) => (
   <div
-    className="app__aboutus app__bg flex__center section__padding"
+    className="app__aboutus  flex__center section__padding"
     id="about"
+    style={{backgroundImage:"url(/bg.png)"}}
   >
     <div className="app__aboutus-overlay flex__center">
       <Image src={images.G} alt="G_overlay" />
