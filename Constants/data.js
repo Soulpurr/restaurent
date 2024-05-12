@@ -93,14 +93,24 @@ const chef = {
   english: {
     name: "Chef's Word",
     headline: "What We Believe In",
+    content1: "Devoted to delighting taste buds, fostering community",
+    content2:
+      "We believe in crafting culinary experiences that celebrate the essence of local flavors, fostering community connections, and promoting sustainability in every dish we serve",
   },
   russian: {
     name: "Слово шеф-повара",
     headline: "Во что мы верим",
+    content1: "Преданы радости вкусовых ощущений и развитию сообщества.",
+    content2:
+      "Мы верим в создание кулинарных впечатлений, отмечающих сущность местных вкусов, способствуя социальным связям и продвигая устойчивость в каждом блюде, которое мы подаем",
   },
   estonian: {
     name: "Peakoka sõna",
     headline: "Millesse me usume",
+    content1:
+      "Oleme pühendunud maitsemeele rõõmustamisele ja kogukonna edendamisele.",
+    content2:
+      "Me usume käsitööliste kogemuste loomisse, mis tähistavad kohalike maitsete olemust, soodustavad kogukonna sidemeid ning edendavad jätkusuutlikkust igas meie pakutavas roas.",
   },
 };
 

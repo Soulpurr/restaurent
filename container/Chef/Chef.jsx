@@ -1,13 +1,17 @@
+import { SubHeading } from "../../components";
+import { images } from "@/Constants";
+import "./Chef.css";
+import Image from "next/image";
 
-import { SubHeading } from '../../components';
-import { images } from '@/Constants';
-import './Chef.css';
-import Image from 'next/image';
-
-const Chef = ({chefdata}) => (
+const Chef = ({ chefdata }) => (
   <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse">
-      <Image src={images.chef} alt="chef_image" />
+      <Image
+        src={"/chef_image.jpg"}
+        width={1280}
+        height={1080}
+        alt="chef_image"
+      />
     </div>
     <div className="app__wrapper_info">
       <SubHeading title={chefdata?.name} />
@@ -16,15 +20,15 @@ const Chef = ({chefdata}) => (
       <div className="app__chef-content">
         <div className="app__chef-content_quote">
           <Image src={images.quote} alt="quote_image" />
-          <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
+          <p className="p__opensans">{chefdata?.content1}</p>
         </div>
-        <p className="p__opensans"> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc. </p>
+        <p className="p__opensans"> {chefdata?.content2} </p>
       </div>
 
       <div className="app__chef-sign">
-        <p>Kevin Luo</p>
+        <p>Balwant Bisht</p>
         <p className="p__opensans">Chef & Founder</p>
-        <Image src={images.sign} alt="sign_image" />
+        {/* <Image src={images.sign} alt="sign_image" /> */}
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ import Image from "next/image";
 import { images } from "@/Constants";
 
 const Header = ({ headerData }) => {
-  console.log(headerData)
+  
   return (
     <div className="app__header app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">

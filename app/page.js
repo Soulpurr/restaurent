@@ -21,7 +21,7 @@ export default function Home() {
   const manageLanguage = (value) => {
     setlanguage(value);
   };
-  console.log(data.award[language])
+  
   return (
     <div className="">
       <Navbar manageLanguage={manageLanguage} />

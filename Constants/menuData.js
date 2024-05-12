@@ -1607,7 +1607,7 @@ let menuData = {
       desc: "Kerge ja marjase karakteriga kuiv roosa vein",
     },
   ],
-  sparklingWines: [
+  sparkling_Wines: [
     {
       nameEnglish: "Mini Freixenet Cava Carta Nevada",
       nameRussian: "Мини Фрейшенет Кава Карта Невада",
@@ -1673,13 +1673,16 @@ let menuData = {
       desc: "Dry sparkling wine with ripe tropical fruit character",
     },
   ],
-  strongAlcoholicDrinks: [
+  strong_Alcoholic_Drinks: [
     {
       nameEnglish: "Hennessy V.S.",
       nameRussian: "Хеннесси V.S.",
       nameEstonian: "Hennessy V.S.",
-      priceSmall: "5.40",
-      priceLarge: "7.20",
+      price:{
+        small:"5.40",
+        large:"7.20",
+        
+      },
       volumeSmall: "4cl",
       volumeLarge: "8cl",
       alcoholPercentage: "40% VOL",
@@ -1689,8 +1692,11 @@ let menuData = {
       nameEnglish: "Hennessy V.S.O.P.",
       nameRussian: "Хеннесси V.S.O.P.",
       nameEstonian: "Hennessy V.S.O.P.",
-      priceSmall: "5.20",
-      priceLarge: "7.40",
+      
+      price:{
+        small:"5.20",
+        large:"7.40",
+      },
       volumeSmall: "4cl",
       volumeLarge: "8cl",
       alcoholPercentage: "40% VOL",
@@ -1702,7 +1708,10 @@ let menuData = {
       nameEstonian: "Metaxa 5*",
       priceSmall: "5.30",
       priceLarge: "7.20",
-      volumeSmall: "4cl",
+      price:{
+        small:"5.30",
+        large:"7.20"
+      },
       volumeLarge: "8cl",
       alcoholPercentage: "38% VOL",
       desc: "A Greek brandy blend, aged in oak barrels",

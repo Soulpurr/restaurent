@@ -4,17 +4,25 @@ import { Navbar } from "@/components";
 import Card from "@/components/Card/Card";
 import Modal from "@/components/Modal/Modal";
 import React, { useState } from "react";
-
+import { IoIosArrowForward } from "react-icons/io";
+import { RxCross1 } from "react-icons/rx";
 function Page() {
   const [open, setopen] = useState(false);
+  const [menuopen, setmenuopen] = useState(false);
   const manageOpen = () => {
     setopen(!open);
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling animation
+    });
   };
   const [menuLanguage, setmenuLanguage] = useState("english");
   const manageMenuLang = (value) => {
     setmenuLanguage(value);
   };
-  console.log(menuLanguage);
+  
   const [type, settype] = useState("Starter");
   return (
     <div className="bg-black text-white">
@@ -26,16 +34,45 @@ function Page() {
       >
         <Modal manageOpen={manageOpen} />
       </div>
-      <div className="  flex flex-col sm:flex-row p-10 justify-center mt-2 sm:mt-10">
-        <div className=" sm:block sm:w-fit lg:w-[30%]">
-          <div className="text-5xl font-bold ">Menu</div>
-          <div className="flex  flex-row sm:flex-col space-x-4 sm:space-x-0 sm:space-y-8 mt-6 overflow-x-scroll no-scrollbar">
+      <div className="flex flex-col sm:flex-row sm:p-10 justify-center mt-2 sm:mt-10">
+        <div className="absolute top-20 left-0 sm:hidden">
+          <IoIosArrowForward
+            color="white"
+            onClick={() => {
+              setmenuopen(!menuopen);
+            }}
+            size={60}
+          />
+        </div>
+        <div className="sm:block sm:w-fit lg:w-[30%] mb-4 sm:mb-0">
+          <div className="text-5xl font-bold text-center sm:text-left">
+            Menu
+          </div>
+          <div
+            className={`z-50 h-full sm:h-auto overflow-y-visible bg-scroll top-0  p-4 sm:p-0 absolute sm:relative duration-100 ${
+              menuopen
+                ? " transition-transform duration-500 translate-x-0"
+                : "-translate-x-full transition-transform duration-500"
+            } sm:translate-x-0 w-[80%] bg-gray-950 sm:bg-transparent sm:w-full  sm:block  flex-col  sm:space-x-0 space-y-4 sm:space-y-8 mt-6 overflow-x-scroll no-scrollbar`}
+          >
+            <div className="absolute sm:hidden right-0 top-1 mb-4">
+              <RxCross1
+                onClick={() => {
+                  setmenuopen(!menuopen);
+                }}
+                color="red"
+                size={40}
+              />
+            </div>
+
             {Object.keys(menuData).map((item, index) => (
               <div
-                className="border-solid border-2 border-green-200 rounded-lg px-1 text-xl h-8 sm:border-none w-fit font-serif cursor-pointer hover:text-yellow-300 "
-                key={index}
+                className=" rounded-lg px-1 font-bold text-md sm:text-xl h-8 sm:border-none w-fit sm:font-serif cursor-pointer hover:text-yellow-300 "
+                key={Math.floor(Math.random() * 1000000)+index}
                 onClick={() => {
                   settype(item);
+                  setmenuopen(false);
+                  scrollToTop();
                 }}
               >
                 {item?.toUpperCase().replace(/_/g, " ")}
@@ -43,24 +80,32 @@ function Page() {
             ))}
           </div>
         </div>
+
         <div className="sm:w-[60%] flex flex-col  ">
-          <h1 className="font-extrabold text-2xl text-green-400 text-center">{type.toUpperCase()}</h1>
-        <div className=" flex flex-wrap h-fit justify-center ">
-          
-          {menuData[type].map((item, index) => (
-            <div key={index} className="text-white">
-              <Card
-                title={
-                  item[`name${menuLanguage.charAt(0).toUpperCase() + menuLanguage.slice(1)}`]
-                }
-                desc={item.desc}
-                price={item.price}
-                type={item.type}
-                manageOpen={manageOpen}
-              />
-            </div>
-          ))}
-        </div>
+          <h1 className="font-extrabold text-xl sm:text-2xl text-green-400 text-center">
+            {type.toUpperCase()}
+          </h1>
+          <div className=" flex flex-wrap h-fit justify-center ">
+            {menuData[type].map((item, index) => (
+              <div key={Math.floor(Math.random() * 1000000)+index} className="text-white">
+                <Card
+                key={Math.floor(Math.random() * 1000000)+index}
+                  title={
+                    item[
+                      `name${
+                        menuLanguage.charAt(0).toUpperCase() +
+                        menuLanguage.slice(1)
+                      }`
+                    ]
+                  }
+                  desc={item.desc}
+                  price={item.price}
+                  type={item.type}
+                  manageOpen={manageOpen}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

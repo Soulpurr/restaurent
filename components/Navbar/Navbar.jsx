@@ -6,6 +6,7 @@ import { images } from "@/Constants";
 import "./Navbar.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Navbar = ({ manageLanguage }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,23 +17,34 @@ const Navbar = ({ manageLanguage }) => {
   };
   const router = useRouter();
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo cursor-pointer">
-        <Image
-          onClick={() => router.push("/")}
-          src={images.gericht}
-          alt="app__logo"
-        />
+    <nav className="app__navbar items-center">
+      <div className="flex flex-row space-x-1 items-center">
+        <div className="border-2 border-gray-400 rounded-full cursor-pointer">
+          <Image
+            onClick={() => router.push("/")}
+            src={"/logo1.png"}
+            height={200}
+            width={300}
+            className="w-14 h-auto bg-transparent rounded-full "
+            alt="app__logo"
+          />
+        </div>
+        <Link
+          href="/"
+          className="hidden sm:block text-xl font-serif text-yellow-500"
+        >
+          BUDDHA'S
+        </Link>
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#home">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li className="p__opensans">
           <a href="#about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="#menu">Menu</a>
+          <Link href="/Menu">Menu</Link>
         </li>
         <li className="p__opensans">
           <a href="#awards">Awards</a>
@@ -54,10 +66,7 @@ const Navbar = ({ manageLanguage }) => {
           <option value="russian">Russian</option>
         </select>
 
-        <div />
-        <a href="/" className="p__opensans">
-          Book Table
-        </a>
+        
       </div>
       <select
         className="bg-green-700 p-2 rounded-xl sm:hidden"
@@ -85,9 +94,9 @@ const Navbar = ({ manageLanguage }) => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+                <Link href="/" onClick={() => setToggleMenu(false)}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#about" onClick={() => setToggleMenu(false)}>
@@ -95,9 +104,9 @@ const Navbar = ({ manageLanguage }) => {
                 </a>
               </li>
               <li>
-                <a href="#menu" onClick={() => setToggleMenu(false)}>
+                <Link href="/Menu" onClick={() => setToggleMenu(false)}>
                   Menu
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#awards" onClick={() => setToggleMenu(false)}>

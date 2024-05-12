@@ -17,7 +17,7 @@ const SpecialMenu = ({ language }) => (
 
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_wine  flex__center">
-        <p className="app__specialMenu-menu_heading">Desertsr</p>
+        <p className="app__specialMenu-menu_heading">Deserts</p>
         <div className="app__specialMenu_menu_items">
           {menuData.desserts.map((desert, index) => (
             <MenuItem
