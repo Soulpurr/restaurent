@@ -57,9 +57,14 @@ const SpecialMenu = ({ language }) => (
     </div>
 
     <div style={{ marginTop: 15 }}>
-      <Link href={"/Menu"} type="button" className="custom__button">
-        View More
-      </Link>
+      <a
+        download="menu.pdf"
+        href={"/menu.pdf"}
+        type="button"
+        className="custom__button"
+      >
+        Download Now
+      </a>
     </div>
   </div>
 );
