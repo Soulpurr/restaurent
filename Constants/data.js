@@ -1,20 +1,19 @@
 import images from "./images";
 const headerContent = {
   english: {
-    upperContent: "Chase The New Flavour",
+    upperContent: "BUDDHA'S RESTAURANT",
     heading: "The Key To Fine Dining",
     bottom:
       "Experience Flavors That Will Tantalize Your Taste Buds And Leave You Wanting More.",
   },
   russian: {
-    upperContent: "Преследуйте Новый Вкус",
+    upperContent: "BUDDHA'S RESTAURANT",
     heading: "Ключ К Изысканному Питанию",
     bottom:
       "Испытайте вкусы, которые будут дразнить ваши вкусовые рецепторы и оставят вас желающими большего.",
   },
   estonian: {
-    upperContent: "Ajage Uus Maitse",
-    heading: "Peen Toitlustuse Võti",
+    upperContent: "BUDDHA'S RESTAURANT",
     bottom:
       "Kogege maitseid, mis kiusavad teie maitsemeeli ja jätavad teid rohkem tahtma.",
   },
@@ -30,17 +29,17 @@ const aboutUs = {
   english: {
     name: "About Us",
     content:
-      "From Farm To Fork, With Heart: We Believe In Sourcing Fresh, Local Ingredients And Transforming Them Into Dishes Made With Love And Care",
+      "At Buddha's Restaurant, we offer the best european cuisine in Estonia. Our menu features a variety of dishes, including vegetarian options, to cater to all taste preferences. Visit us for a memorable dining experience.",
   },
   russian: {
     name: "О нас",
     content:
-      "От фермы до вилки, с душой: мы верим в поиск свежих, местных ингредиентов и превращение их в блюда, приготовленные с любовью и заботой",
+      "В ресторане Будда мы предлагаем лучшую европейскую кухню в Эстонии. Наше меню включает разнообразные блюда, в том числе вегетарианские опции, чтобы удовлетворить все вкусовые предпочтения. Посетите нас, чтобы получить незабываемый кулинарный опыт.",
   },
   estonian: {
     name: "Meist",
     content:
-      "Põllult kahvlini, südamega: usume värskete, kohalike koostisosade hankimisse ja nende muundamisse armastuse ja hoolitsusega valmistatud roogadeks",
+      "Buddha restoranis pakume parimat Euroopa kööki Eestis. Meie menüüs on erinevaid roogasid, sealhulgas taimetoitlastele mõeldud valikuid, et rahuldada kõikide maitse-eelistusi. Külastage meid, et saada meeldejääv söögikogemus",
   },
 };
 
@@ -154,17 +153,17 @@ const photoGallery = {
   english: {
     name: "Photo Gallery",
     content:
-      "Step Into A World Of Stories, Captured In Time. Explore Our Photo Gallery, Where Memories Come Alive And Emotions Flicker In Every Frame.",
+      "Explore Buddha's Restaurant photo gallery – finest European cuisine, cozy ambiance, and vegetarian options in Estonia.",
   },
   russian: {
     name: "Фотогалерея",
     content:
-      "Войдите в мир историй, запечатленных во времени. Исследуйте нашу фотогалерею, где оживают воспоминания, и эмоции мерцают в каждом кадре.",
+      "Посмотрите фотогалерею ресторана Будда – лучшие блюда европейской кухни, уютная атмосфера и вегетарианские опции в Эстонии.",
   },
   estonian: {
     name: "Fotogalerii",
     content:
-      "Astuge maailma lugude sisse, mis on ajas kinni püütud. Uurige meie fotogaleriid, kus elustuvad mälestused ja emotsioonid välgatavad igas kaadris.",
+      "Vaadake Buddha restorani fotogaleriid – parimad Euroopa köögi road, hubane atmosfäär, ja taimetoitlaste valikud Eestis.",
   },
 };
 

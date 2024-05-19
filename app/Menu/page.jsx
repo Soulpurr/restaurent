@@ -48,7 +48,7 @@ function Page() {
           />
         </div>
 
-        <div className="sm:block sm:w-fit lg:w-[25%] mb-4 sm:mb-0">
+        <div className="sm:block sm:w-fit lg:w-[25%]  sm:mb-0">
           <div className="hidden sm:block text-5xl font-bold text-center sm:text-left">
             Menu
           </div>

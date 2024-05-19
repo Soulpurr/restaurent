@@ -15,13 +15,15 @@ import "./App.css";
 import { useState } from "react";
 import { data } from "@/Constants";
 
+
+
 export default function Home() {
   const [language, setlanguage] = useState("english");
 
   const manageLanguage = (value) => {
     setlanguage(value);
   };
-  
+
   return (
     <div className="">
       <Navbar manageLanguage={manageLanguage} />
@@ -29,7 +31,11 @@ export default function Home() {
         headerData={data.headerContent[language]}
         btn={data.exploreMenuBtn[language]}
       />
-      <AboutUs aboutdata={data.aboutUs[language]} history={data.history[language]} know={data.knowMoreBtn[language]} />
+      <AboutUs
+        aboutdata={data.aboutUs[language]}
+        history={data.history[language]}
+        know={data.knowMoreBtn[language]}
+      />
       <SpecialMenu language={language} />
       <Chef chefdata={data.chef[language]} />
       <Intro />
