@@ -254,7 +254,7 @@ const bgImg = {
   INDIAN_MAIN_COURSE_VEG: "veg.jpg",
   INDIAN_MAIN_COURSE_NONVEG: "/non_veg.jpg",
   ORIENTAL_MAINCOURSE_VEG: "/paneer.jpeg",
-  CHICKEN_DISHES: "/special.jpeg",
+  CHICKEN_DISHES: "/chicken.jpeg",
   PORK_DISHES: "/food12.jpg",
   LAMB_DISHES: "non_veg.jpg",
   BEEF_DISHES: "/food12.jpg",

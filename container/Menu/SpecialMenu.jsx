@@ -40,7 +40,7 @@ const SpecialMenu = ({ language }) => (
       <div className="app__specialMenu-menu_cocktails  flex__center">
         <p className="app__specialMenu-menu_heading">Cocktails</p>
         <div className="app__specialMenu_menu_items">
-          {menuData.iceCreamCocktails.map((cocktail, index) => (
+          {menuData.ice_Cream_Cocktails.map((cocktail, index) => (
             <MenuItem
               key={cocktail.title + index}
               title={

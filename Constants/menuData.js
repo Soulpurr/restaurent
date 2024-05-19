@@ -1794,7 +1794,7 @@ let menuData = {
       desc: "A clear tequila with a smooth and crisp taste, perfect for cocktails",
     },
   ],
-  iceCreamCocktails: [
+  ice_Cream_Cocktails: [
     {
       nameEnglish: "VANILLA SHAKE",
       nameRussian: "Ванильный коктейль",
