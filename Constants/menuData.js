@@ -211,7 +211,7 @@ let menuData = {
       nameEnglish: "Tom Kha Soup - Chicken / Prawn",
       nameRussian: "Том Кха Суп - Курица / Креветки",
       nameEstonian: "Tom Kha supp - kana / krevett",
-      price: {"Tom Kha Soup - Chicken": 7.4, "Tom Kha Soup - Prawn": 8.4 },
+      price: { "Tom Kha Soup - Chicken": 7.4, "Tom Kha Soup - Prawn": 8.4 },
       type: "non-veg",
       desc: "Enjoy a spicy Thai soup with coconut milk, vegetables, lemongrass, and Thai ginger, served with chicken or prawns for an authentic taste.",
     },
@@ -245,7 +245,7 @@ let menuData = {
       nameEnglish: "Avocado Salad with Chicken / Shrimp (Caesar Sauce)",
       nameRussian: "Салат с авокадо и курицей / креветками (соус Цезарь)",
       nameEstonian: "Avokaado salat kanaga / krevettidega (Caesar kaste)",
-      price: [7.0, 7.6],
+      price: { chicken: 7.0, shrimp: 7.6 },
       type: "non-veg",
       desc: "Savor the goodness of avocado salad with mixed greens, cucumber, and bell pepper, topped with grilled chicken or shrimp and Caesar dressing.",
     },
@@ -1678,10 +1678,9 @@ let menuData = {
       nameEnglish: "Hennessy V.S.",
       nameRussian: "Хеннесси V.S.",
       nameEstonian: "Hennessy V.S.",
-      price:{
-        small:"5.40",
-        large:"7.20",
-        
+      price: {
+        small: "5.40",
+        large: "7.20",
       },
       volumeSmall: "4cl",
       volumeLarge: "8cl",
@@ -1692,10 +1691,10 @@ let menuData = {
       nameEnglish: "Hennessy V.S.O.P.",
       nameRussian: "Хеннесси V.S.O.P.",
       nameEstonian: "Hennessy V.S.O.P.",
-      
-      price:{
-        small:"5.20",
-        large:"7.40",
+
+      price: {
+        small: "5.20",
+        large: "7.40",
       },
       volumeSmall: "4cl",
       volumeLarge: "8cl",
@@ -1708,9 +1707,9 @@ let menuData = {
       nameEstonian: "Metaxa 5*",
       priceSmall: "5.30",
       priceLarge: "7.20",
-      price:{
-        small:"5.30",
-        large:"7.20"
+      price: {
+        small: "5.30",
+        large: "7.20",
       },
       volumeLarge: "8cl",
       alcoholPercentage: "38% VOL",
