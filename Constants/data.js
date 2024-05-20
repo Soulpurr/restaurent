@@ -13,6 +13,7 @@ const headerContent = {
       "Испытайте вкусы, которые будут дразнить ваши вкусовые рецепторы и оставят вас желающими большего.",
   },
   estonian: {
+    heading:"Peene söömise võtme",
     upperContent: "BUDDHA'S RESTAURANT",
     bottom:
       "Kogege maitseid, mis kiusavad teie maitsemeeli ja jätavad teid rohkem tahtma.",

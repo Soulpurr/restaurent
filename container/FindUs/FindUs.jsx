@@ -29,7 +29,13 @@ const FindUs = () => (
         className="custom__button"
         style={{ marginTop: "2rem" }}
       >
-        Visit Us
+        <a
+          href="https://www.google.com/maps/place/P%C3%A4rnu+67,+Paide,+72715+J%C3%A4rva+maakond,+Estonia/@58.8864282,25.5527338,17z/data=!3m1!4b1!4m6!3m5!1s0x46933699ef995ac3:0xf3a9b69703bdb42b!8m2!3d58.8864282!4d25.5553087!16s%2Fg%2F11bw415g_w?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Us
+        </a>
       </button>
     </div>
 

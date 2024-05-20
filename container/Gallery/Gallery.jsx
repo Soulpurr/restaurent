@@ -35,9 +35,9 @@ const Gallery = ({photo}) => {
         >
           {photo?.content}
         </p>
-        <button type="button" className="custom__button">
+        {/* <button type="button" className="custom__button">
           View More
-        </button>
+        </button> */}
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
