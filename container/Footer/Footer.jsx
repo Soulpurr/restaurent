@@ -13,7 +13,7 @@ const Footer = () => (
 
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
-        <h1 className="app__footer-headtext">Contact Us</h1>
+        <h2 className="app__footer-headtext">Contact Us</h2>
         <p className="p__opensans">Pärnu 67-71, Paide, 72718 Järva maakond, Estonia</p>
         <p className="p__opensans">+372 5818 7893</p>
         <p className="p__opensans">+372 5818 7893</p>
@@ -32,7 +32,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_work">
-        <h1 className="app__footer-headtext">Working Hours</h1>
+        <h2 className="app__footer-headtext">Working Hours</h2>
         <p className="p__opensans">Monday-Thursday:</p>
         <p className="p__opensans">10:00 am - 21:00 pm</p>
         <p className="p__opensans">Friday-Sunday:</p>

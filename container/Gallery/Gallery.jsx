@@ -28,7 +28,7 @@ const Gallery = ({photo}) => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">{photo?.name}</h1>
+        <h2 className="headtext__cormorant">{photo?.name}</h2>
         <p
           className="p__opensans"
           style={{ color: "#AAAAAA", marginTop: "2rem" }}

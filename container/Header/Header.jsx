@@ -11,8 +11,8 @@ const Header = ({ headerData }) => {
   return (
     <div className="app__header app__wrapper section__padding" id="home">
       <div className="app__wrapper_info">
-        <SubHeading title={headerData?.upperContent} />
-        <h1 className="app__header-h1">{headerData?.heading}g</h1>
+        <h1 className="text-white text-xl sm:text-3xl font-serif">{headerData?.upperContent} </h1>
+        <h2 className="app__header-h1">{headerData?.heading}</h2>
         <p className="p__opensans" style={{ margin: "2rem 0" }}>
           {headerData?.bottom}
         </p>

@@ -18,7 +18,7 @@ const Chef = ({ chefdata }) => (
     </div>
     <div className="app__wrapper_info">
       <SubHeading title={chefdata?.name} />
-      <h1 className="headtext__cormorant">{chefdata?.headline}</h1>
+      <h2 className="headtext__cormorant">{chefdata?.headline}</h2>
 
       <div className="app__chef-content">
         <div className="app__chef-content_quote">

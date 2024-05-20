@@ -16,7 +16,7 @@ const AboutUs = ({ aboutdata, know, history }) => (
 
     <div className="app__aboutus-content flex__center">
       <div className="app__aboutus-content_about">
-        <h1 className="headtext__cormorant">{aboutdata?.name}</h1>
+        <h2 className="headtext__cormorant">{aboutdata?.name}</h2>
         <Image src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">{aboutdata?.content}</p>
         <button type="button" className="custom__button">
@@ -29,7 +29,7 @@ const AboutUs = ({ aboutdata, know, history }) => (
       </div>
 
       <div className="app__aboutus-content_history">
-        <h1 className="headtext__cormorant">{history?.name}</h1>
+        <h2 className="headtext__cormorant">{history?.name}</h2>
         <Image src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">{history?.content}</p>
         <button type="button" className="custom__button">

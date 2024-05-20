@@ -23,7 +23,7 @@ const Laurels = ({laurels}) => {
     <div className="app__bg app__wrapper section__padding" id="awards">
       <div className="app__wrapper_info">
         <SubHeading title="Awards & recognition" />
-        <h1 className="headtext__cormorant">{laurels?.name}</h1>
+        <h2 className="headtext__cormorant">{laurels?.name}</h2>
 
         <div className="app__laurels_awards">
           <AwardCard title={laurels.first} subtitle={laurels.firstContent}/>
