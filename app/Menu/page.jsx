@@ -1,5 +1,6 @@
 "use client";
-import menuData from "@/Constants/menuData";
+
+import menuData1 from "@/Constants/menudata2";
 import { Navbar } from "@/components";
 import Card1 from "@/components/Card/Card1";
 import Modal from "@/components/Modal/Modal";
@@ -8,8 +9,8 @@ import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import { data } from "@/Constants";
+import Link from "next/link";
 function Page() {
-  
   const [open, setopen] = useState(false);
   const [menuopen, setmenuopen] = useState(false);
   const manageOpen = () => {
@@ -48,10 +49,10 @@ function Page() {
           />
         </div>
 
-        <div className="sm:block sm:w-fit lg:w-[25%]  sm:mb-0">
-          <div className="hidden sm:block text-5xl font-bold text-center sm:text-left">
+        <div className="sm:block sm:w-fit sm:w-[25%] mb-4 sm:mb-0 ">
+          <Link href={"/Menu"} className="hidden hover:text-yellow-600 sm:block text-5xl font-bold text-center sm:text-left">
             Menu
-          </div>
+          </Link>
           <div
             className={`z-50 h-full sm:h-auto overflow-y-visible bg-scroll top-0  p-4 sm:p-0 absolute sm:relative duration-100 ${
               menuopen
@@ -74,7 +75,7 @@ function Page() {
               </div>
               <h1 className="text-xl text-yellow-400 font-serif">BUDDHA'S</h1>
             </div>
-            {Object.keys(menuData).map((item, index) => (
+            {Object.keys(menuData1).map((item, index) => (
               <div
                 className=" rounded-lg px-1 font-bold text-md sm:text-xl h-8 sm:border-none w-fit sm:font-serif cursor-pointer hover:text-yellow-300 "
                 key={Math.floor(Math.random() * 1000000) + index}
@@ -108,7 +109,7 @@ function Page() {
             <div className="border-solid border-2 bg-gray-950 bg-opacity-50  w-[90%] sm:w-[80%] h-fit rounded-2xl sm:mb-8 ">
               <div className="bg-opacity-100 brightness-200 ">
                 <div className="flex flex-col space-y-2">
-                  {menuData[type].map((item, index) => (
+                  {menuData1[type].map((item, index) => (
                     <div
                       key={Math.floor(Math.random() * 1000000) + index}
                       className="text-white"
@@ -121,11 +122,19 @@ function Page() {
                               menuLanguage.charAt(0).toUpperCase() +
                               menuLanguage.slice(1)
                             }`
+                          ]||item[
+                            `name${
+                              "English".charAt(0).toUpperCase() +
+                              "English".slice(1)
+                            }`
                           ]
                         }
                         desc={item.desc}
                         price={item.price}
                         type={item.type}
+                        num={item.num}
+                        vol={item?.volume}
+                        alc={item?.alcoholPercentage}
                         manageOpen={manageOpen}
                       />
                     </div>

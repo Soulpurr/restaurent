@@ -1,6 +1,5 @@
-let menuData = {
+let menuData1 = {
   Starter: [
-    // Buddha’s Special Roll
     {
       nameEnglish: "Buddha’s Special Roll",
       nameEstonian: "Buddha kevadrullid",
@@ -8,8 +7,8 @@ let menuData = {
       type: "veg",
       desc: "Mushroom, egg, and vegetable roll.",
       price: "6.20",
+      num: 1,
     },
-    // Vegetable Roll
     {
       nameEnglish: "Vegetable Roll",
       nameEstonian: "Krõbedad pannkoogirullid",
@@ -22,8 +21,8 @@ let menuData = {
         prawn: "6.00",
         mix: "6.30",
       },
+      num: 2,
     },
-    // Spicy Garlic Chicken Wings
     {
       nameEnglish: "Spicy Garlic Chicken Wings",
       nameEstonian: "Marineeritud kanatiivad",
@@ -31,17 +30,21 @@ let menuData = {
       type: "non veg",
       desc: "Delicious fried marinated chicken wings with onion and peppers in chili garlic sauce.",
       price: "7.30",
+      num: 3,
     },
-    // Chicken / Fish / Paneer Pakora
     {
       nameEnglish: "Chicken / Fish / Paneer Pakora",
       nameEstonian: "Kana / kala kroketid / India juust",
       nameRussian: "Куриные или / рыбные оладьи / Индийский творог",
       type: "non veg / veg",
       desc: "Chicken, fish fritters, or Indian cottage cheese with Indian spices, served with sauce.",
-      price: { chicken: "7.50", fish: "7.60", paneer: "7.60" },
+      price: {
+        chicken: "7.50",
+        fish: "7.60",
+        paneer: "7.60",
+      },
+      num: 4,
     },
-    // Crispy Vegetables Kung Pao
     {
       nameEnglish: "Crispy Vegetables Kung Pao",
       nameEstonian: "Kung Pao krõbedad köögiviljad",
@@ -49,8 +52,8 @@ let menuData = {
       type: "veg",
       desc: "Crispy vegetables in Kung Pao sauce.",
       price: "7.60",
+      num: 5,
     },
-    // Drums of Heaven
     {
       nameEnglish: "Drums of Heaven",
       nameEstonian: "Friteeritud marineeritud kanatiivad",
@@ -58,8 +61,8 @@ let menuData = {
       type: "non veg",
       desc: "Fried marinated chicken wings with ginger, garlic, onion, and paprika.",
       price: "7.80",
+      num: 6,
     },
-    // Chili Potato
     {
       nameEnglish: "Chili Potato",
       nameEstonian: "Tšilli kartul",
@@ -67,8 +70,8 @@ let menuData = {
       type: "veg",
       desc: "Spicy chili potatoes.",
       price: "7.80",
+      num: 7,
     },
-    // Krõbe Chili Tofu
     {
       nameEnglish: "Smoky Crispy Chili tofu (Indian cheese)",
       nameEstonian: "Krõbe Tšilli Tofu",
@@ -76,8 +79,8 @@ let menuData = {
       type: "veg",
       desc: "Smoky crispy chili tofu (Indian cheese).",
       price: "8.60",
+      num: 8,
     },
-    // Honey Potato
     {
       nameEnglish: "Honey Potato",
       nameEstonian: "Meekartul",
@@ -85,8 +88,8 @@ let menuData = {
       type: "veg",
       desc: "Honey-glazed potatoes.",
       price: "8.60",
+      num: 9,
     },
-    // Crispy Eggplant
     {
       nameEnglish: "Crispy Eggplant",
       nameEstonian: "Krõbe baklažaan",
@@ -94,8 +97,8 @@ let menuData = {
       type: "veg",
       desc: "Crispy fried eggplant.",
       price: "8.60",
+      num: 10,
     },
-    // Crispy Chilli Fish
     {
       nameEnglish: "Crispy Chilli Fish",
       nameEstonian:
@@ -105,8 +108,8 @@ let menuData = {
       type: "non veg",
       desc: "Fried fish with onion, beans, and peppers in hot garlic sauce.",
       price: "9.30",
+      num: 11,
     },
-    // Crispy Chicken Salt & Pepper
     {
       nameEnglish: "Crispy Chicken Salt & Pepper",
       nameEstonian: "Krõbe kana soola ja pipraga",
@@ -114,8 +117,8 @@ let menuData = {
       type: "non veg",
       desc: "Crispy chicken with salt and pepper.",
       price: "9.50",
+      num: 12,
     },
-    // Smoky Crispy Chili (Indian cheese)
     {
       nameEnglish: "Smoky Crispy Chili (Indian cheese)",
       nameEstonian: "Suitsune krõbe chili (india juust)",
@@ -123,8 +126,8 @@ let menuData = {
       type: "veg",
       desc: "Smoky crispy chili with Indian cheese.",
       price: "9.50",
+      num: 13,
     },
-    // Crispy Chili Chicken with Celery
     {
       nameEnglish: "Crispy Chili Chicken with Celery",
       nameEstonian:
@@ -133,8 +136,8 @@ let menuData = {
       type: "non veg",
       desc: "Crispy fried chicken flavored with chili and fresh celery.",
       price: "9.90",
+      num: 14,
     },
-    // Chicken Shashlik
     {
       nameEnglish: "Chicken Shashlik",
       nameEstonian: "Kanaliha sašlõkk",
@@ -142,8 +145,8 @@ let menuData = {
       type: "non veg",
       desc: "Chicken skewers with potatoes, salad, and sauce.",
       price: "10.50",
+      num: 15,
     },
-    // Prawn Tempura
     {
       nameEnglish: "Prawn Tempura",
       nameEstonian: "Tempura taignas friteeritud krevetid",
@@ -151,8 +154,8 @@ let menuData = {
       type: "non veg",
       desc: "Tempura-battered fried prawns.",
       price: "10.90",
+      num: 16,
     },
-    // Pork Shashlik
     {
       nameEnglish: "Pork Shashlik",
       nameEstonian: "Sealiha sašlõkk",
@@ -160,8 +163,8 @@ let menuData = {
       type: "non veg",
       desc: "Pork skewers with potatoes, salad, and sauce.",
       price: "11.60",
+      num: 17,
     },
-    // Prawn Salt & Pepper
     {
       nameEnglish: "Prawn Salt & Pepper",
       nameEstonian: "Krevetid sibula, paprika ja valge veiniga",
@@ -169,27 +172,33 @@ let menuData = {
       type: "non veg",
       desc: "Prawns with onion, paprika, and cooking wine.",
       price: "11.50",
+      num: 18,
     },
   ],
-
-  // Add other menu items here...
-
   soup: [
     {
       nameEnglish: "Tom Yum Soup - Chicken / Prawn",
       nameRussian: "Том Ям Суп - Курица / Креветки",
       nameEstonian: "Tom Yum supp - kana / krevett",
-      price: { "Tom Yum Soup - Chicken": 6.5, Prawn: 7.0 },
+      price: {
+        "Tom Yum Soup - Chicken": 6.5,
+        Prawn: 7,
+      },
       type: "non-veg",
       desc: "Spicy Thai soup with vegetables, lemongrass, and Thai ginger, served with chicken or prawns for a flavorful experience.",
+      num: 19,
     },
     {
       nameEnglish: "Noodle Soup with Chicken or Prawn",
       nameRussian: "Суп с лапшой с курицей или креветками",
       nameEstonian: "Nuudli supp kana või krevettidega",
-      price: { " Noodle Soup with Chicken": 6.0, Prawn: 7.0 },
+      price: {
+        " Noodle Soup with Chicken": 6,
+        Prawn: 7,
+      },
       type: "non-veg",
       desc: "Enjoy a comforting bowl of noodle soup with tender chicken or succulent prawns, perfect for a satisfying meal.",
+      num: 20,
     },
     {
       nameEnglish: "Hot and Sour Soup with Chicken",
@@ -198,6 +207,7 @@ let menuData = {
       price: 6.1,
       type: "non-veg",
       desc: "Indulge in a rich, spicy, and tangy soup with chicken, mushrooms, green onions, and egg, offering a flavorful delight.",
+      num: 21,
     },
     {
       nameEnglish: "Tomato Chicken Soup",
@@ -206,14 +216,19 @@ let menuData = {
       price: 6.2,
       type: "non-veg",
       desc: "Savor the richness of tomato soup with tender chicken and egg, offering a comforting and satisfying dining experience.",
+      num: 22,
     },
     {
       nameEnglish: "Tom Kha Soup - Chicken / Prawn",
       nameRussian: "Том Кха Суп - Курица / Креветки",
       nameEstonian: "Tom Kha supp - kana / krevett",
-      price: { "Tom Kha Soup - Chicken": 7.4, "Tom Kha Soup - Prawn": 8.4 },
+      price: {
+        "Tom Kha Soup - Chicken": 7.4,
+        "Tom Kha Soup - Prawn": 8.4,
+      },
       type: "non-veg",
       desc: "Enjoy a spicy Thai soup with coconut milk, vegetables, lemongrass, and Thai ginger, served with chicken or prawns for an authentic taste.",
+      num: 23,
     },
     {
       nameEnglish: "Buddha's Noodle Soup",
@@ -222,6 +237,7 @@ let menuData = {
       price: 7.5,
       type: "non-veg",
       desc: "Delight in a spicy noodle soup with vegetables, chicken, and prawns, offering a harmonious blend of flavors and textures.",
+      num: 24,
     },
   ],
   salad: [
@@ -229,25 +245,31 @@ let menuData = {
       nameEnglish: "Fresh Vegetable Salad (Caesar Sauce)",
       nameRussian: "Свежий овощной салат (соус Цезарь)",
       nameEstonian: "Värske köögiviljasalat (Caesar kaste)",
-      price: 6.0,
+      price: 6,
       type: "veg",
       desc: "Enjoy a refreshing salad with crisp fresh vegetables, topped with creamy Caesar sauce for a delightful burst of flavor.",
+      num: 25,
     },
     {
       nameEnglish: "Bacon & Cheese Salad",
       nameRussian: "Салат с беконом и сыром",
       nameEstonian: "Krõbe peekon- ja juustusalat",
-      price: 7.0,
+      price: 7,
       type: "non-veg",
       desc: "Indulge in a crunchy salad with crispy bacon, flavorful cheese, fresh romaine lettuce, cabbage, cucumber, tomato, and creamy mayo dressing.",
+      num: 26,
     },
     {
       nameEnglish: "Avocado Salad with Chicken / Shrimp (Caesar Sauce)",
       nameRussian: "Салат с авокадо и курицей / креветками (соус Цезарь)",
       nameEstonian: "Avokaado salat kanaga / krevettidega (Caesar kaste)",
-      price: { chicken: 7.0, shrimp: 7.6 },
+      price: {
+        chicken: 7,
+        shrimp: 7.6,
+      },
       type: "non-veg",
       desc: "Savor the goodness of avocado salad with mixed greens, cucumber, and bell pepper, topped with grilled chicken or shrimp and Caesar dressing.",
+      num: 27,
     },
   ],
   indian_Main_Course_Veg: [
@@ -258,6 +280,7 @@ let menuData = {
       price: 10.5,
       type: "veg",
       desc: "Indulge in a delightful mix of Asian-style assorted vegetables, offering a burst of flavors and aromas with every bite.",
+      num: 28,
     },
     {
       nameEnglish: "Paneer Butter Masala (Indian Cheese)",
@@ -266,6 +289,7 @@ let menuData = {
       price: 10.6,
       type: "veg",
       desc: "Savor the rich and creamy curry made with Indian cheese, spices, onions, tomatoes, cashews, and butter for a truly indulgent experience.",
+      num: 29,
     },
     {
       nameEnglish: "Paneer Makhani (Indian Cheese)",
@@ -274,6 +298,7 @@ let menuData = {
       price: 10.7,
       type: "veg",
       desc: "Enjoy tender Indian cheese cooked in a flavorful sauce made with tomatoes, cashews, spices, and cream for a luxurious dining experience.",
+      num: 30,
     },
     {
       nameEnglish: "Paneer Lababdar (Indian Cheese)",
@@ -282,6 +307,7 @@ let menuData = {
       price: 10.7,
       type: "veg",
       desc: "Indulge in Indian cheese cooked in a rich and creamy sauce with onions and tomatoes, offering a perfect balance of flavors and textures.",
+      num: 31,
     },
     {
       nameEnglish: "Palak Paneer (Spinach)",
@@ -290,6 +316,7 @@ let menuData = {
       price: 10.7,
       type: "veg",
       desc: "Savor the creamy spinach sauce with tender Indian cheese, offering a delightful blend of flavors and a nutritious dining option.",
+      num: 32,
     },
     {
       nameEnglish: "Kadai Paneer (Indian Cheese)",
@@ -298,6 +325,7 @@ let menuData = {
       price: 10.9,
       type: "veg",
       desc: "Enjoy Indian cheese cooked in a flavorful Kadai sauce, offering a tantalizing blend of spices and aromas for a memorable dining experience.",
+      num: 33,
     },
   ],
   indian_Main_Course_NonVeg: [
@@ -308,6 +336,7 @@ let menuData = {
       price: 12.5,
       type: "non-veg",
       desc: "Indulge in tender tandoori chicken immersed in a spicy tomato-onion sauce, offering a tantalizing fusion of flavors and aromas.",
+      num: 34,
     },
     {
       nameEnglish: "Butter Chicken",
@@ -316,6 +345,7 @@ let menuData = {
       price: 12.5,
       type: "non-veg",
       desc: "Savor the richness of tandoori chicken in a creamy butter-cashew tomato sauce, offering a luxurious dining experience.",
+      num: 35,
     },
     {
       nameEnglish: "Spinach Chicken",
@@ -324,6 +354,7 @@ let menuData = {
       price: 12.6,
       type: "non-veg",
       desc: "Enjoy tender chicken pieces cooked in a flavorful garlic spinach curry, offering a nutritious and delicious dining option.",
+      num: 36,
     },
     {
       nameEnglish: "Lamb Masala",
@@ -332,6 +363,7 @@ let menuData = {
       price: 13.6,
       type: "non-veg",
       desc: "Savor the succulent lamb cooked in a rich onion-tomato sauce with aromatic Indian spices, offering a delightful culinary experience.",
+      num: 37,
     },
     {
       nameEnglish: "Lamb Curry",
@@ -340,6 +372,7 @@ let menuData = {
       price: 13.6,
       type: "non-veg",
       desc: "Indulge in tender lamb pieces cooked in a flavorful Indian spiced onion-tomato curry, offering a perfect blend of spices and flavors.",
+      num: 38,
     },
     {
       nameEnglish: "Prawn Masala",
@@ -348,6 +381,7 @@ let menuData = {
       price: 13.7,
       type: "non-veg",
       desc: "Savor the succulent prawns cooked in a rich onion-tomato sauce with aromatic Indian spices, offering a delightful burst of flavors.",
+      num: 39,
     },
   ],
   oriental_MainCourse_Veg: [
@@ -355,17 +389,19 @@ let menuData = {
       nameEnglish: "Tofu Hot Garlic Sauce",
       nameRussian: "Тофу в остром чесночном соусе",
       nameEstonian: "Tofu teravas küüslaugukastmes",
-      price: 8.0,
+      price: 8,
       type: "veg",
       desc: "Enjoy tofu and vegetables immersed in a spicy chili-pepper sauce, offering a flavorful and aromatic experience.",
+      num: 40,
     },
     {
       nameEnglish: "Tofu Black Pepper",
       nameRussian: "Тофу с черным перцем",
       nameEstonian: "Tofu musta pipra kastmes",
-      price: 8.0,
+      price: 8,
       type: "veg",
       desc: "Savor tofu and vegetables in a flavorful chili-pepper sauce with a hint of black pepper, offering a delightful burst of flavors.",
+      num: 41,
     },
     {
       nameEnglish: "Crispy Eggplant in Hot Garlic Sauce",
@@ -374,6 +410,7 @@ let menuData = {
       price: 8.2,
       type: "veg",
       desc: "Indulge in crispy eggplant coated in a spicy garlic sauce, offering a perfect blend of crispiness and spice for a delightful dining experience.",
+      num: 42,
     },
     {
       nameEnglish: "Crispy Honey Eggplant",
@@ -382,6 +419,7 @@ let menuData = {
       price: 8.6,
       type: "veg",
       desc: "Savor crispy eggplant and vegetables in a delightful honey-sesame sauce, offering a perfect balance of sweetness and crunchiness.",
+      num: 43,
     },
     {
       nameEnglish: "Crispy Eggplant Chilli Basil Sauce",
@@ -390,6 +428,7 @@ let menuData = {
       price: 8.7,
       type: "veg",
       desc: "Indulge in crispy eggplant tossed in a tangy chili basil sauce, offering a perfect balance of flavors and textures for a delightful meal.",
+      num: 44,
     },
   ],
   chicken_Dishes: [
@@ -400,6 +439,7 @@ let menuData = {
       price: "9.40",
       type: "non veg",
       desc: "A classic dish featuring tender chicken cooked with vegetables in a sweet and tangy sauce.",
+      num: 45,
     },
     {
       nameEnglish: "ORANGE CHICKEN",
@@ -409,6 +449,7 @@ let menuData = {
       price: "9.40",
       type: "non veg",
       desc: "Juicy chicken pieces coated in a rich orange-flavored sauce, delivering a burst of citrusy goodness.",
+      num: 46,
     },
     {
       nameEnglish: "HONEY CHICKEN",
@@ -417,6 +458,7 @@ let menuData = {
       price: "9.50",
       type: "non veg",
       desc: "Tender chicken cooked in a savory honey-chili sauce, offering a perfect balance of sweet and spicy flavors.",
+      num: 47,
     },
     {
       nameEnglish: "CHICKEN HOT GARLIC",
@@ -426,6 +468,7 @@ let menuData = {
       price: "9.60",
       type: "non veg",
       desc: "Spicy and aromatic, this dish features diced chicken cooked with onion, paprika, and garlic in a fiery sauce.",
+      num: 48,
     },
     {
       nameEnglish: "PEKING CHICKEN",
@@ -434,6 +477,7 @@ let menuData = {
       price: "9.60",
       type: "non veg",
       desc: "A delightful combination of crispy fried chicken filet in a sweet and tangy chili sauce.",
+      num: 49,
     },
     {
       nameEnglish: "THAI BASIL CHILLI CHICKEN BASIL TRANSLATE",
@@ -444,6 +488,7 @@ let menuData = {
       price: "9.60",
       type: "non veg",
       desc: "A flavorful Thai-inspired dish with diced chicken, zucchini, paprika, chili, and cashew nuts.",
+      num: 50,
     },
     {
       nameEnglish: "KUNG PAO CHICKEN",
@@ -454,6 +499,7 @@ let menuData = {
       price: "9.60",
       type: "non veg",
       desc: "A spicy and savory dish featuring diced chicken tossed with zucchini, paprika, chili, and cashew nuts.",
+      num: 51,
     },
     {
       nameEnglish: "HOISIN CHICKEN",
@@ -464,6 +510,7 @@ let menuData = {
       price: "9.60",
       type: "non veg",
       desc: "Tender chicken cubes cooked in a flavorful barbecue sauce with onions, beans, and bamboo shoots.",
+      num: 52,
     },
     {
       nameEnglish: "CHICKEN SZECHUAN",
@@ -474,12 +521,14 @@ let menuData = {
       price: "9.65",
       type: "non veg",
       desc: "Spicy and aromatic, this Szechuan-style chicken dish features diced chicken cooked with onion, paprika, and celery.",
+      num: 53,
     },
     {
       nameEnglish: "SINGAPOORI CHICKEN",
       price: "9.60",
       type: "non veg",
-      desc: "", // Insert a desc here if available
+      desc: "",
+      num: 54,
     },
     {
       nameEnglish: "THAI RED CURRY CHICKEN",
@@ -488,6 +537,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Tender chicken cooked in a rich and creamy Thai red curry sauce with vegetables.",
+      num: 55,
     },
     {
       nameEnglish: "THAI GREEN CURRY CHICKEN",
@@ -496,14 +546,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Aromatic and flavorful, this Thai green curry chicken dish features tender chicken cooked in a fragrant coconut milk sauce.",
-    },
-    {
-      nameEnglish: "Cherry Chicken",
-      nameEstonian: "Kirsi kana",
-      nameRussian: "Курица ц вишней",
-      price: "10.60",
-      type: "non veg",
-      desc: "Aromatic and flavorful, this Thai green curry chicken dish features tender chicken cooked in a fragrant coconut milk sauce.",
+      num: 56,
     },
   ],
   pork_Dishes: [
@@ -516,6 +559,7 @@ let menuData = {
       price: "10.10",
       type: "non veg",
       desc: "Tender pieces of pork cooked in a sweet and tangy sauce with pineapple, carrot, and onion.",
+      num: 57,
     },
     {
       nameEnglish: "PORK IN HOT GARLIC SAUCE",
@@ -524,6 +568,7 @@ let menuData = {
       price: "10.25",
       type: "non veg",
       desc: "Slices of pork cooked with onion and beans in a spicy garlic sauce.",
+      num: 58,
     },
     {
       nameEnglish: "PORK WITH MUSHROOMS & BAMBOO SHOOTS",
@@ -533,6 +578,7 @@ let menuData = {
       price: "10.50",
       type: "non veg",
       desc: "Tender slices of pork cooked with mushrooms and bamboo shoots in a savory soy sauce.",
+      num: 59,
     },
     {
       nameEnglish: "HOISIN PORK",
@@ -543,6 +589,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Juicy pork slices cooked in a flavorful barbecue sauce with onions, beans, and bamboo shoots.",
+      num: 60,
     },
     {
       nameEnglish: "UN-LAU PORK",
@@ -553,6 +600,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Tender slices of pork marinated in a special sauce with cucumber, carrot, bamboo shoots, pineapple, and onion.",
+      num: 61,
     },
     {
       nameEnglish: "SZECHUAN-STYLE PORK",
@@ -563,6 +611,7 @@ let menuData = {
       price: "10.80",
       type: "non veg",
       desc: "Slices of pork cooked with onion, beans, and celery in a spicy Szechuan sauce.",
+      num: 62,
     },
     {
       nameEnglish: "Crispy pork with capsicum and garlic",
@@ -571,6 +620,7 @@ let menuData = {
       price: "11.00",
       type: "non veg",
       desc: "Crispy pork strips cooked with bell peppers and garlic for a flavorful dish.",
+      num: 63,
     },
     {
       nameEnglish: "PORK RED CURRY",
@@ -580,6 +630,7 @@ let menuData = {
       price: "12.20",
       type: "non veg",
       desc: "Tender pork cooked in a fragrant Thai red curry sauce with vegetables.",
+      num: 64,
     },
     {
       nameEnglish: "PORK GREEN CURRY",
@@ -589,6 +640,7 @@ let menuData = {
       price: "12.20",
       type: "non veg",
       desc: "Aromatic and flavorful, this Thai green curry pork dish features tender pork cooked in a fragrant coconut milk sauce with vegetables.",
+      num: 65,
     },
   ],
   lamb_Dishes: [
@@ -601,6 +653,7 @@ let menuData = {
       price: "10.0",
       type: "non veg",
       desc: "Tender slices of lamb cooked with onion, broccoli, and bamboo shoots in a savory barbecue sauce.",
+      num: 66,
     },
     {
       nameEnglish: "LAMB IN HOT GARLIC SAUCE",
@@ -611,6 +664,7 @@ let menuData = {
       price: "10.50",
       type: "non veg",
       desc: "Slices of lamb cooked with beans and onion in a spicy garlic sauce.",
+      num: 67,
     },
     {
       nameEnglish: "UN-LAU LAMB",
@@ -621,6 +675,7 @@ let menuData = {
       price: "10.55",
       type: "non veg",
       desc: "Slices of lamb marinated with cucumber, carrot, bamboo shoots, pineapple, and onion.",
+      num: 68,
     },
     {
       nameEnglish: "LAMB BLACK PEPPER SAUCE",
@@ -631,6 +686,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Slices of lamb cooked with onion, mushrooms, bamboo shoots, black pepper, and chili.",
+      num: 69,
     },
     {
       nameEnglish: "LAMB WITH MUSHROOMS AND BAMBOO SHOOTS",
@@ -641,6 +697,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Slices of lamb cooked with bamboo shoots and mushrooms in a rich soy-garlic sauce.",
+      num: 70,
     },
     {
       nameEnglish: "SZECHUAN LAMB",
@@ -651,6 +708,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Shredded lamb cooked with onion, celery, bell pepper in a spicy Szechuan pepper sauce.",
+      num: 71,
     },
   ],
   beef_Dishes: [
@@ -663,6 +721,7 @@ let menuData = {
       price: "10.50",
       type: "non veg",
       desc: "Slices of beef marinated with cucumber, carrot, bamboo shoots, pineapple, and onion.",
+      num: 72,
     },
     {
       nameEnglish: "BEEF IN HOT GARLIC SAUCE",
@@ -673,6 +732,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Slices of beef cooked in a spicy garlic sauce with onion and beans.",
+      num: 73,
     },
     {
       nameEnglish: "BEEF WITH MUSHROOMS AND BAMBOO SHOOTS",
@@ -683,6 +743,7 @@ let menuData = {
       price: "10.80",
       type: "non veg",
       desc: "Slices of beef with mushrooms, bamboo shoots in a garlic-ginger sauce.",
+      num: 74,
     },
     {
       nameEnglish: "BEEF SZECHUAN",
@@ -693,6 +754,7 @@ let menuData = {
       price: "10.90",
       type: "non veg",
       desc: "Slices of beef with beans, onion, celery, and pepper in a spicy Szechuan sauce.",
+      num: 75,
     },
     {
       nameEnglish: "Crispy beef with capsicum and garlic",
@@ -701,6 +763,7 @@ let menuData = {
       price: "13.00",
       type: "non veg",
       desc: "Crispy beef strips with capsicum and garlic.",
+      num: 76,
     },
     {
       nameEnglish: "BEEF GREEN CURRY",
@@ -710,6 +773,7 @@ let menuData = {
       price: "13.00",
       type: "non veg",
       desc: "Thai coconut flavored green curry with beef and vegetables.",
+      num: 77,
     },
     {
       nameEnglish: "BEEF RED CURRY",
@@ -719,6 +783,7 @@ let menuData = {
       price: "13.20",
       type: "non veg",
       desc: "Thai coconut flavored red curry with beef and vegetables.",
+      num: 78,
     },
   ],
   sea_food_Dishes: [
@@ -729,6 +794,7 @@ let menuData = {
       price: "9.20",
       type: "non veg",
       desc: "Fried fish and vegetables in sweet and sour sauce.",
+      num: 79,
     },
     {
       nameEnglish: "SWEET CHILLI FISH",
@@ -737,6 +803,7 @@ let menuData = {
       price: "9.30",
       type: "non veg",
       desc: "Fried fish in sweet chili sauce.",
+      num: 80,
     },
     {
       nameEnglish: "SWEET AND SOUR PRAWN",
@@ -746,6 +813,7 @@ let menuData = {
       price: "11.60",
       type: "non veg",
       desc: "Batter-fried prawns with onion and paprika in pepper-garlic sauce.",
+      num: 81,
     },
     {
       nameEnglish: "PRAWN IN HOT GARLIC SAUCE",
@@ -755,6 +823,7 @@ let menuData = {
       price: "12.60",
       type: "non veg",
       desc: "Prawns in hot garlic sauce with onion and beans.",
+      num: 82,
     },
     {
       nameEnglish: "PRAWN SZECHUAN",
@@ -765,6 +834,7 @@ let menuData = {
       price: "12.90",
       type: "non veg",
       desc: "Prawns with onion, paprika, and celery in spicy Szechuan pepper sauce.",
+      num: 83,
     },
     {
       nameEnglish: "THAI GREEN CURRY PRAWN",
@@ -774,6 +844,7 @@ let menuData = {
       price: "13.40",
       type: "non veg",
       desc: "Thai coconut flavored green curry with vegetables and prawns.",
+      num: 84,
     },
     {
       nameEnglish: "THAI RED CURRY PRAWN",
@@ -783,6 +854,7 @@ let menuData = {
       price: "13.60",
       type: "non veg",
       desc: "Thai coconut flavored red curry with vegetables and prawns.",
+      num: 85,
     },
   ],
   squid_Dishes: [
@@ -793,6 +865,7 @@ let menuData = {
       price: "10.40",
       type: "non veg",
       desc: "Chinese-style salt and pepper squid.",
+      num: 86,
     },
     {
       nameEnglish: "Squid in honey sauce",
@@ -801,6 +874,7 @@ let menuData = {
       price: "10.50",
       type: "non veg",
       desc: "Squid cooked in honey sauce.",
+      num: 87,
     },
     {
       nameEnglish: "Stir fry squid with oyster sauce",
@@ -809,6 +883,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Stir-fried squid with oyster sauce.",
+      num: 88,
     },
     {
       nameEnglish: "Squid with capsicum and celery in garlic sauce",
@@ -817,6 +892,7 @@ let menuData = {
       price: "10.60",
       type: "non veg",
       desc: "Squid with capsicum and celery in garlic sauce.",
+      num: 89,
     },
   ],
   duck_Dishes: [
@@ -828,6 +904,7 @@ let menuData = {
       price: "12.50",
       type: "non veg",
       desc: "Crispy fried duck served with vegetables in sweet and sour sauce.",
+      num: 90,
     },
     {
       nameEnglish: "Crispy duck with pineapple in orange sauce",
@@ -836,6 +913,7 @@ let menuData = {
       price: "12.60",
       type: "non veg",
       desc: "Crispy duck served with pineapple in orange sauce.",
+      num: 91,
     },
     {
       nameEnglish: "Crispy duck with honey and pineapple",
@@ -844,6 +922,7 @@ let menuData = {
       price: "12.60",
       type: "non veg",
       desc: "Crispy duck served with honey and pineapple.",
+      num: 92,
     },
     {
       nameEnglish: "Crispy fried duck in hot garlic sauce",
@@ -852,6 +931,7 @@ let menuData = {
       price: "12.70",
       type: "non veg",
       desc: "Crispy fried duck served in hot garlic sauce.",
+      num: 93,
     },
     {
       nameEnglish: "Crispy fried duck in hoisin sauce",
@@ -862,6 +942,7 @@ let menuData = {
       price: "12.70",
       type: "non veg",
       desc: "Crispy fried duck served in hoisin sauce with onion, beans, and bamboo shoots.",
+      num: 94,
     },
   ],
   tandoori_Bread: [
@@ -872,6 +953,7 @@ let menuData = {
       price: "2.30",
       type: "veg",
       desc: "Traditional Indian bread baked in a tandoor oven.",
+      num: 95,
     },
     {
       nameEnglish: "Butter Naan",
@@ -880,6 +962,7 @@ let menuData = {
       price: "2.50",
       type: "veg",
       desc: "Naan bread brushed with butter for a rich flavor.",
+      num: 96,
     },
     {
       nameEnglish: "Garlic Naan",
@@ -888,6 +971,7 @@ let menuData = {
       price: "3.00",
       type: "veg",
       desc: "Naan bread infused with garlic, adding a savory taste.",
+      num: 97,
     },
     {
       nameEnglish: "Paneer Naan (Indian cheese)",
@@ -896,6 +980,7 @@ let menuData = {
       price: "3.50",
       type: "veg",
       desc: "Naan bread stuffed with Indian cottage cheese (paneer).",
+      num: 98,
     },
     {
       nameEnglish: "Cheese Naan",
@@ -904,6 +989,7 @@ let menuData = {
       price: "4.00",
       type: "veg",
       desc: "Naan bread filled with cheese, offering a gooey texture.",
+      num: 99,
     },
     {
       nameEnglish: "Cheese and Bacon Naan",
@@ -913,6 +999,7 @@ let menuData = {
       price: "4.20",
       type: "non veg",
       desc: "White flatbread filled with cheese and bacon, baked in a tandoor oven.",
+      num: 100,
     },
     {
       nameEnglish: "Cheese and Garlic Naan",
@@ -922,6 +1009,7 @@ let menuData = {
       price: "4.50",
       type: "veg",
       desc: "White flatbread filled with cheese and garlic, baked in a tandoor oven.",
+      num: 101,
     },
   ],
   rice_And_Noodle: [
@@ -930,42 +1018,71 @@ let menuData = {
       nameEstonian: "Aurutatud riis",
       nameRussian: "Пареный рис",
       desc: "",
-      price: { base: 2.8 },
+      price: {
+        base: 2.8,
+      },
+      num: 102,
     },
     {
       nameEnglish: "Veg Hakka Noodle",
       nameEstonian: "Hakka nuudlid juurviljadega",
       nameRussian: "Хакка лапша с овощами",
       desc: "",
-      price: { base: 5.0, chicken: 5.8, prawn: 6.3, mix: 6.8 },
+      price: {
+        base: 5,
+        chicken: 5.8,
+        prawn: 6.3,
+        mix: 6.8,
+      },
+      num: 103,
     },
     {
       nameEnglish: "Rice with Vegetables",
       nameEstonian: "Riis köögiviljadega",
       nameRussian: "Жареный рис с овощами",
       desc: "",
-      price: { base: 5.2, chicken: 5.7, prawn: 6.0, mix: 6.2 },
+      price: {
+        base: 5.2,
+        chicken: 5.7,
+        prawn: 6,
+        mix: 6.2,
+      },
+      num: 104,
     },
     {
       nameEnglish: "Rice Noodle with vegetables",
       nameEstonian: "Riisinuudlid köögiviljadega",
       nameRussian: "Рисовая лапша с овощами",
       desc: "",
-      price: { base: 5.4, chicken: 5.8, prawn: 6.0, mix: 6.8 },
+      price: {
+        base: 5.4,
+        chicken: 5.8,
+        prawn: 6,
+        mix: 6.8,
+      },
+      num: 105,
     },
     {
       nameEnglish: "Chilli Garlic Noodle Chicken",
       nameEstonian: "Teravad nuudlid küüslauguga kanaga",
       nameRussian: "Остро чесночная лапша с курицей",
       desc: "",
-      price: { base: 6.3, mix: 6.8 },
+      price: {
+        base: 6.3,
+        mix: 6.8,
+      },
+      num: 106,
     },
     {
       nameEnglish: "Chicken chilli garlic rice",
       nameEstonian: "Terav riis küüslaugu ja tšilliga kanaga",
       nameRussian: "Жареный рис с чили и чесноком курицей",
       desc: "",
-      price: { base: 6.5, mix: 6.7 },
+      price: {
+        base: 6.5,
+        mix: 6.7,
+      },
+      num: 107,
     },
     {
       nameEnglish: "PAD THAI VEGETABLE",
@@ -974,7 +1091,10 @@ let menuData = {
       nameRussian:
         "Тайская жареная рисовая лапша с яйцом, арахисом и овощами в кис",
       desc: "Tai vokitud riisinuudlid muna, pähklite ja köögiviljadega magushapus Pad thai kastmes.",
-      price: { base: 6.8 },
+      price: {
+        base: 6.8,
+      },
+      num: 108,
     },
     {
       nameEnglish: "Singapore Noodle chicken, shrimp",
@@ -983,7 +1103,10 @@ let menuData = {
       nameRussian:
         "В сингапурском стиле рисовая лапша с морепродуктами или курицей и креветками",
       desc: "",
-      price: { base: 6.8 },
+      price: {
+        base: 6.8,
+      },
+      num: 109,
     },
     {
       nameEnglish: "CHILLI GARLIC RICE NOODLE CHICKEN",
@@ -992,14 +1115,22 @@ let menuData = {
       nameRussian:
         "Рисовая лапша с овощами, яйцом, чили и чесноком и курицей / креветками",
       desc: "",
-      price: { chicken: 7.0, prawn: 7.7 },
+      price: {
+        chicken: 7,
+        prawn: 7.7,
+      },
+      num: 110,
     },
     {
       nameEnglish: "Thai Chilli and Basil Rice Chicken",
       nameEstonian: "Taipärane riis tilli basiiliku ja kanaga",
       nameRussian: "В тайском стиле рис с чили и базиликом с курицей",
       desc: "",
-      price: { chicken: 6.8, prawn: 7.2 },
+      price: {
+        chicken: 6.8,
+        prawn: 7.2,
+      },
+      num: 111,
     },
     {
       nameEnglish: "PAD THAI CHICKEN",
@@ -1008,7 +1139,10 @@ let menuData = {
       nameRussian:
         "Тайская жареная рисовая лапша с яйцом, овощами, арахисом и курицей в кисло-сладком соусе Пад Тай.",
       desc: "Tai vokitud riisinuudlid muna, köögiviljade, pähklite ja kanalihaga magushapus Pad thai kastmes.",
-      price: { base: 7.5 },
+      price: {
+        base: 7.5,
+      },
+      num: 112,
     },
     {
       nameEnglish: "PAD THAI PRAWN",
@@ -1017,7 +1151,10 @@ let menuData = {
       nameRussian:
         "Тайская жареная рисовая лапша с яйцом, овощами, арахисом и креветками в кисло-сладком соусе Пад Тай.",
       desc: "Tai vokitud riisinuudlid muna, köögiviljade, pähklite ja krevettidega magushapus Pad thai kastmes.",
-      price: { base: 8.2 },
+      price: {
+        base: 8.2,
+      },
+      num: 113,
     },
   ],
   child_Menu: [
@@ -1028,6 +1165,7 @@ let menuData = {
       price: 4.5,
       type: "veg",
       desc: "Classic French fries, crispy and delicious.",
+      num: 114,
     },
     {
       nameEnglish: "French Fries with Sausages",
@@ -1036,6 +1174,7 @@ let menuData = {
       price: 4.6,
       type: "non-veg",
       desc: "French fries served with tasty sausages.",
+      num: 115,
     },
     {
       nameEnglish: "Ham Cheese Roll",
@@ -1044,6 +1183,7 @@ let menuData = {
       price: 5.2,
       type: "non-veg",
       desc: "Delicious rolls filled with ham and cheese.",
+      num: 116,
     },
     {
       nameEnglish: "Rice / Noodle with egg and sausage",
@@ -1052,6 +1192,7 @@ let menuData = {
       price: 5.5,
       type: "non-veg",
       desc: "Savory rice or noodles served with egg and sausage.",
+      num: 117,
     },
     {
       nameEnglish: "Egg Cheese Roll",
@@ -1060,14 +1201,16 @@ let menuData = {
       price: 5.7,
       type: "veg",
       desc: "Tasty rolls filled with egg and cheese, perfect for kids.",
+      num: 118,
     },
     {
       nameEnglish: "Noodle with egg and honey chicken",
       nameEstonian: "Nuudlid muna ja kanatiibadega",
       nameRussian: "Лапша / рис с яйцом и куриными крылышками",
-      price: 6.0,
+      price: 6,
       type: "non-veg",
       desc: "Noodles served with egg and honey-glazed chicken wings.",
+      num: 119,
     },
   ],
   tea_And_Coffee: [
@@ -1075,57 +1218,85 @@ let menuData = {
       nameEnglish: "JADE JASMINE PEARLS",
       nameEstonian: "JADE JASMINE PEARLS",
       nameRussian: "JADE JASMINE PEARLS",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "Delicate green tea pearls infused with jasmine flavor.",
+      num: 120,
     },
     {
       nameEnglish: "YUNNAN FOP",
       nameEstonian: "YUNNAN FOP",
       nameRussian: "YUNNAN FOP",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "A bold and rich black tea from the Yunnan province of China.",
+      num: 121,
     },
     {
       nameEnglish: "JAPANESE SEMCHA SANSYU",
       nameEstonian: "JAPANESE SEMCHA SANSYU",
       nameRussian: "JAPANESE SEMCHA SANSYU",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "A high-quality green tea from Japan, known for its fresh and grassy flavor.",
+      num: 122,
     },
     {
       nameEnglish: "GRÖN FRISK & HET",
       nameEstonian: "GRÖN FRISK & HET",
       nameRussian: "GRÖN FRISK & HET",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "A refreshing blend of green tea with a hint of spice.",
+      num: 123,
     },
     {
       nameEnglish: "APELSINI MIX",
       nameEstonian: "APELSINI MIX",
       nameRussian: "APELSINI MIX",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "A citrusy tea blend with orange flavor.",
+      num: 124,
     },
     {
       nameEnglish: "KISS ME KATE",
       nameEstonian: "KISS ME KATE",
       nameRussian: "KISS ME KATE",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "A romantic blend of floral and fruity notes.",
+      num: 125,
     },
     {
       nameEnglish: "HIBINKU FRUITS",
       nameEstonian: "HIBINKU FRUITS",
       nameRussian: "HIBINKU FRUITS",
-      price: { cup: 2.0, pot: 4.5 },
+      price: {
+        cup: 2,
+        pot: 4.5,
+      },
       type: "tea",
       desc: "An exotic fruit-infused tea with a hint of hibiscus.",
+      num: 126,
     },
     {
       nameEnglish: "Kakao",
@@ -1134,6 +1305,7 @@ let menuData = {
       price: 3.2,
       type: "coffee",
       desc: "Rich and creamy hot cocoa, perfect for chocolate lovers.",
+      num: 127,
     },
     {
       nameEnglish: "Espresso",
@@ -1142,6 +1314,7 @@ let menuData = {
       price: 2.5,
       type: "coffee",
       desc: "A strong and intense shot of espresso.",
+      num: 128,
     },
     {
       nameEnglish: "Suur Espresso",
@@ -1150,6 +1323,7 @@ let menuData = {
       price: 3.5,
       type: "coffee",
       desc: "A larger serving of espresso for those who need an extra kick.",
+      num: 129,
     },
     {
       nameEnglish: "Kohv (must või piimaga) ",
@@ -1158,6 +1332,7 @@ let menuData = {
       price: 2.5,
       type: "coffee",
       desc: "Classic coffee served black or with milk.",
+      num: 130,
     },
     {
       nameEnglish: "Suur kohv (must või piimaga)",
@@ -1166,6 +1341,7 @@ let menuData = {
       price: 3.2,
       type: "coffee",
       desc: "A larger serving of classic coffee, black or with milk.",
+      num: 131,
     },
     {
       nameEnglish: "Cappuccino",
@@ -1174,6 +1350,7 @@ let menuData = {
       price: 3.5,
       type: "coffee",
       desc: "Espresso topped with frothed milk, perfect for coffee connoisseurs.",
+      num: 132,
     },
     {
       nameEnglish: "Cafe Latte",
@@ -1182,6 +1359,7 @@ let menuData = {
       price: 3.5,
       type: "coffee",
       desc: "Creamy and smooth coffee with steamed milk, a comforting choice.",
+      num: 133,
     },
   ],
   drinks_and_water: [
@@ -1191,13 +1369,15 @@ let menuData = {
       type: "water",
       volume: "330ml",
       desc: "Refreshing Neptune water available in both still and sparkling variants.",
+      num: 134,
     },
     {
       nameEnglish: "Neptunas (gaasita, gaasiga) 750ml",
-      price: 4.0,
+      price: 4,
       type: "water",
       volume: "750ml",
       desc: "Larger bottle of Neptune water, perfect for sharing or for those who need more hydration.",
+      num: 135,
     },
     {
       nameEnglish: "Aura-vesi (gaasita, gaasiga, sidruni, pohla) 500ml",
@@ -1205,6 +1385,7 @@ let menuData = {
       type: "water",
       volume: "500ml",
       desc: "Aura water with various flavor options including lemon and cranberry, available in still and sparkling.",
+      num: 136,
     },
     {
       nameEnglish: "Coca Cola 330ml",
@@ -1212,6 +1393,7 @@ let menuData = {
       type: "soda",
       volume: "330ml",
       desc: "Classic Coca Cola, the perfect fizzy drink to accompany your meal.",
+      num: 137,
     },
     {
       nameEnglish: "Coca Cola Zero 330ml",
@@ -1219,6 +1401,7 @@ let menuData = {
       type: "soda",
       volume: "330ml",
       desc: "Sugar-free Coca Cola for those who prefer a lighter option.",
+      num: 138,
     },
     {
       nameEnglish: "Sprite 330ml",
@@ -1226,6 +1409,7 @@ let menuData = {
       type: "soda",
       volume: "330ml",
       desc: "Refreshing lemon-lime Sprite, a great thirst-quencher.",
+      num: 139,
     },
     {
       nameEnglish: "Fanta 330ml",
@@ -1233,21 +1417,24 @@ let menuData = {
       type: "soda",
       volume: "330ml",
       desc: "Fruity and vibrant Fanta, perfect for fans of orange soda.",
+      num: 140,
     },
     {
       nameEnglish: "Energiajook Burn 330 ml",
-      price: 3.0,
+      price: 3,
       type: "energy drink",
       volume: "330ml",
       desc: "Boost your energy with Burn, a popular energy drink.",
+      num: 141,
     },
     {
       nameEnglish: "Fuze Tea (virsik, sidrun) 500 ml",
-      price: 3.0,
+      price: 3,
       type: "tea",
       flavor: ["peach", "lemon"],
       volume: "500ml",
       desc: "Delicious Fuze Tea infused with peach and lemon flavors, a refreshing choice.",
+      num: 142,
     },
     {
       nameEnglish: "Kali Imperial Kvass 400 ml",
@@ -1255,6 +1442,7 @@ let menuData = {
       type: "soft drink",
       volume: "400ml",
       desc: "Traditional Russian kvass, a fermented beverage made from rye bread.",
+      num: 143,
     },
     {
       nameEnglish: "Limonaad Traditsiooniline 330 ml",
@@ -1262,6 +1450,7 @@ let menuData = {
       type: "soft drink",
       volume: "330ml",
       desc: "Traditional lemonade, a classic and timeless drink loved by all.",
+      num: 144,
     },
     {
       nameEnglish: "A.LECoq CLASSIC KVASS 500ml",
@@ -1269,6 +1458,597 @@ let menuData = {
       type: "soft drink",
       volume: "500ml",
       desc: "Classic A. Le Coq kvass, a refreshing beverage with a distinctive taste.",
+      num: 145,
+    },
+  ],
+  beers: [
+    {
+      nameEnglish: "KINGFISHER PREMIUM BEER",
+      desc: "Indian Beer",
+      volume: "0.330L",
+      alcoholPercentage: "4.8% VOL",
+      price: 4.5,
+      num: 149,
+    },
+    {
+      nameEnglish: "SINGHA LAGER BEER",
+      desc: "Thailand Beer",
+      volume: "0.330L",
+      alcoholPercentage: "5.0% VOL",
+      price: 4.5,
+      num: 150,
+    },
+    {
+      nameEnglish: "TSINGTAO BEER",
+      desc: "Chinese Beer",
+      volume: "0.330L",
+      alcoholPercentage: "4.7% VOL",
+      price: 4.5,
+      num: 151,
+    },
+    {
+      nameEnglish: "A.LECoq premium",
+      volume: "0.5L",
+      alcoholPercentage: "4.7% VOL",
+      price: 4.3,
+      num: 152,
+    },
+    {
+      nameEnglish: "CORONA EXTRA",
+      volume: "0.330L",
+      alcoholPercentage: "4.5% VOL",
+      price: 4.3,
+      num: 153,
+    },
+    {
+      nameEnglish: "TÖMMU HOOD DARK",
+      volume: "0.5L",
+      alcoholPercentage: "4.7% VOL",
+      price: 4.2,
+      num: 154,
+    },
+    {
+      nameEnglish: "IMPERIAL GOLD",
+      volume: "0.4L",
+      alcoholPercentage: "4.8% VOL",
+      price: 4.3,
+      num: 155,
+    },
+    {
+      nameEnglish: "A.LECoq SPECIAL",
+      volume: "0.5L",
+      alcoholPercentage: "5.2% VOL",
+      price: 4.2,
+      num: 156,
+    },
+    {
+      nameEnglish: "WARSTEINER PREMIUM VERUM",
+      volume: "0.5L",
+      alcoholPercentage: "4.8% VOL",
+      price: 4.3,
+      num: 157,
+    },
+    {
+      nameEnglish: "ALEXANDER",
+      volume: "0.5L",
+      alcoholPercentage: "5.2% VOL",
+      price: 4.2,
+      num: 158,
+    },
+    {
+      nameEnglish: "BLOND MUNK",
+      volume: "0.5L",
+      alcoholPercentage: "6% VOL",
+      price: 4.3,
+      num: 159,
+    },
+    {
+      nameEnglish: "KARKSI PORTER",
+      volume: "0.5L",
+      alcoholPercentage: "6% VOL",
+      price: 4.3,
+      num: 160,
+    },
+    {
+      nameEnglish: "KLOOSTRIÕLU",
+      volume: "0.5L",
+      alcoholPercentage: "5% VOL",
+      price: 4.3,
+      num: 161,
+    },
+  ],
+  alcohol_Free_Beers: [
+    {
+      nameEnglish: "A.LECoq premium",
+      volume: "0.330L",
+      alcoholPercentage: "0% VOL",
+      price: 3.5,
+      num: 162,
+    },
+    {
+      nameEnglish: "WARSTEINER PREMIUM FRESH",
+      volume: "0.330L",
+      alcoholPercentage: "0% VOL",
+      price: 3.5,
+      num: 163,
+    },
+  ],
+  ciders: [
+    {
+      nameEnglish: "HOGGY'S PEAR HEAVEN",
+      volume: "0.330L",
+      alcoholPercentage: "4.5% VOL",
+      price: 3.8,
+      num: 164,
+    },
+    {
+      nameEnglish: "HOGGY'S APPLE PARADISE",
+      volume: "0.330L",
+      alcoholPercentage: "4.5% VOL",
+      price: 3.8,
+      num: 165,
+    },
+    {
+      nameEnglish: "FIZZ BLUEBERRY",
+      volume: "0.5L",
+      alcoholPercentage: "4.5% VOL",
+      price: 4,
+      num: 166,
+    },
+    {
+      nameEnglish: "FIZZ PEAR",
+      volume: "0.5L",
+      alcoholPercentage: "4.5% VOL",
+      price: 4,
+      num: 167,
+    },
+    {
+      nameEnglish: "G:N LONG DRINK GRAPEFRUIT",
+      volume: "0.330L",
+      alcoholPercentage: "5.5% VOL",
+      price: 3.8,
+      num: 168,
+    },
+  ],
+  red_Wines: [
+    {
+      nameEnglish: "ANTA HELENA SYRAH CABERNET SAUVIGNON",
+      volume: "12CL",
+      alcoholPercentage: "13%",
+      price: 4.8,
+      desc: "(HOUSE WINE)",
+      num: 169,
+    },
+    {
+      nameEnglish: "Hardys Crest Shiraz",
+      volume: "0.75L",
+      alcoholPercentage: "14%",
+      price: 16.7,
+      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
+      num: 170,
+    },
+    {
+      nameEnglish: "Cono Sur Tocornal Cabernet Sauvignon",
+      volume: "0.75L",
+      alcoholPercentage: "12%",
+      price: 16.4,
+      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
+      num: 171,
+    },
+    {
+      nameEnglish: "Canti Merlot",
+      volume: "0.75L",
+      alcoholPercentage: "11.5%",
+      price: 14.2,
+      desc: "Kerge, marjase iseloomuga kuiv punavein",
+      num: 172,
+    },
+    {
+      nameEnglish: "Savannah Pinotage-Shiraz",
+      volume: "0.75L",
+      alcoholPercentage: "14%",
+      price: 16.2,
+      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
+      num: 173,
+    },
+    {
+      nameEnglish: "Don David Malbec",
+      volume: "0.75L",
+      alcoholPercentage: "14%",
+      price: 22.1,
+      desc: "Keskmisest täidlasem, marjaselt vürtsika iseloomuga kuiv punavein",
+      num: 174,
+    },
+    {
+      nameEnglish: "Marani Kindzmarauli",
+      volume: "0.75L",
+      alcoholPercentage: "11.5%",
+      price: 22.2,
+      desc: "Keskmise täidlusega, marjase iseloomuga poolmagus punavein",
+      num: 175,
+    },
+  ],
+  white_Wines: [
+    {
+      nameEnglish: "Pinot Grigio Garda DOC",
+      volume: "0.75L",
+      alcoholPercentage: "12.5%",
+      price: 19,
+      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
+      num: 176,
+    },
+    {
+      nameEnglish: "Canti Chardonnay",
+      volume: "0.75L",
+      alcoholPercentage: "11.5%",
+      price: 16.1,
+      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
+      num: 177,
+    },
+    {
+      nameEnglish: "Cono Sur Tocornal Chardonnay BIB",
+      volume: "12CL",
+      alcoholPercentage: "12%",
+      price: 4.8,
+      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein (HOUSE WINE)",
+      num: 178,
+    },
+    {
+      nameEnglish: "Spier Signature Sauvignon Blanc",
+      volume: "0.75L",
+      alcoholPercentage: "13%",
+      price: 18.4,
+      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
+      num: 179,
+    },
+    {
+      nameEnglish: "Marani Tvishi",
+      volume: "0.75L",
+      alcoholPercentage: "11%",
+      price: 19,
+      desc: "Keskmise täidlusega, puuviljase iseloomuga poolkuiv valge vein",
+      num: 180,
+    },
+  ],
+  rose_Wines: [
+    {
+      nameEnglish: "Cono Sur Bicicleta Pinot Noir Rose",
+      volume: "0.75L",
+      alcoholPercentage: "12%",
+      price: 16.8,
+      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
+      num: 181,
+    },
+    {
+      nameEnglish: "Cono Sur Bicicleta Pinot Noir Rose",
+      volume: "0.75L",
+      alcoholPercentage: "12%",
+      price: 16.8,
+      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
+      num: 182,
+    },
+    {
+      nameEnglish: "Le Grand Noir Rose",
+      volume: "0.75L",
+      alcoholPercentage: "12.5%",
+      price: 18,
+      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
+      num: 183,
+    },
+    {
+      nameEnglish: "Le Grand Noir Rose Sparkling",
+      volume: "0.75L",
+      alcoholPercentage: "12%",
+      price: 18,
+      desc: "Keskmise täidlusega, kuiv roosa vahuvein",
+      num: 184,
+    },
+    {
+      nameEnglish: "Barone Ricasoli Albia Rose,Toscana IGT",
+      volume: "0.75L",
+      alcoholPercentage: "13%",
+      price: 25.6,
+      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
+      num: 185,
+    },
+  ],
+  sparkling_Wines: [
+    {
+      nameEnglish: "Mini Freixenet Cava Carta Nevada",
+      nameRussian: "Мини Фрейшенет Кава Карта Невада",
+      nameEstonian: "Mini Freixenet Cava Carta Nevada",
+      price: "7.40",
+      type: "Medium DRH 11.5% 20CL",
+      desc: "Light, medium, aromatic sparkling wine",
+      num: 186,
+    },
+    {
+      nameEnglish: "Martini Asti",
+      nameRussian: "Мартини Асти",
+      nameEstonian: "Martini Asti",
+      price: "7.40",
+      type: "7.5% 0.2L",
+      desc: "Light, sweet, aromatic sparkling wine",
+      num: 187,
+    },
+    {
+      nameEnglish: "Maschio Prosecco DOC Treviso Extra Dry",
+      nameRussian: "Машкио Прозекко ДОК Тревизо Экстра Драй",
+      nameEstonian: "Maschio Prosecco DOC Treviso Extra Dry",
+      price: "7.40",
+      type: "11% 0.2L",
+      desc: "Light, fresh, fruitfully lively dry sparkling wine",
+      num: 188,
+    },
+    {
+      nameEnglish: "Baron Rosen Alazani Valley White Medium-Sweet",
+      nameRussian: "Барон Розен Алазани Вэлли Уайт Медиум-Свит",
+      nameEstonian: "Baron Rosen Alazani Valley White Medium-Sweet",
+      price: "16.60",
+      type: "12% 0.75L",
+      desc: "Fruity character, semi-sweet white wine",
+      num: 189,
+    },
+    {
+      nameEnglish: "Martini Asti",
+      nameRussian: "Мартини Асти",
+      nameEstonian: "Martini Asti",
+      price: "22.00",
+      type: "7.5% 0.75L",
+      desc: "Light, sweet, aromatic sparkling wine",
+      num: 190,
+    },
+    {
+      nameEnglish: "Maschio Prosecco DOC Treviso Extra Dry",
+      nameRussian: "Машкио Прозекко ДОК Тревизо Экстра Драй",
+      nameEstonian: "Maschio Prosecco DOC Treviso Extra Dry",
+      price: "22.50",
+      type: "11% 0.75L",
+      desc: "Light, fresh, fruitfully lively dry sparkling wine",
+      num: 191,
+    },
+    {
+      nameEnglish: "Carpene Malvolti Prosecco DOC Treviso Brut",
+      nameRussian: "Карпене Мальвольти Прозекко ДОК Тревизо Брут",
+      nameEstonian: "Carpene Malvolti Prosecco DOC Treviso Brut",
+      price: "28.00",
+      type: "11% 0.75L",
+      desc: "Light, dry, fruitfully refreshing sparkling wine",
+      num: 192,
+    },
+    {
+      nameEnglish: "Helfrich Cremant d'Alsace Brut",
+      nameRussian: "Хельфрих Креман д'Альзас Брут",
+      nameEstonian: "Helfrich Cremant d'Alsace Brut",
+      price: "28.60",
+      type: "12% 0.75L",
+      desc: "Dry sparkling wine with ripe tropical fruit character",
+      num: 193,
+    },
+  ],
+  strong_Alcoholic_Drinks: [
+    {
+      nameEnglish: "Hennessy V.S.",
+      nameRussian: "Хеннесси V.S.",
+      nameEstonian: "Hennessy V.S.",
+      price: {
+        small: "5.40",
+        large: "7.20",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A classic French cognac, aged in oak barrels",
+      num: 194,
+    },
+    {
+      nameEnglish: "Hennessy V.S.O.P.",
+      nameRussian: "Хеннесси V.S.O.P.",
+      nameEstonian: "Hennessy V.S.O.P.",
+      price: {
+        small: "5.20",
+        large: "7.40",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A premium French cognac, very superior old pale",
+      num: 195,
+    },
+    {
+      nameEnglish: "Metaxa 5*",
+      nameRussian: "Метакса 5*",
+      nameEstonian: "Metaxa 5*",
+      priceSmall: "5.30",
+      priceLarge: "7.20",
+      price: {
+        small: "5.30",
+        large: "7.20",
+      },
+      volumeLarge: "8cl",
+      alcoholPercentage: "38% VOL",
+      desc: "A Greek brandy blend, aged in oak barrels",
+      num: 196,
+    },
+  ],
+  whiskey: [
+    {
+      nameEnglish: "Jack Daniels",
+      nameRussian: "Джек Дэниэлс",
+      nameEstonian: "Jack Daniels",
+      price: {
+        small: "4.40",
+        large: "7.20",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A classic American whiskey, known for its smooth flavor",
+      num: 197,
+    },
+    {
+      nameEnglish: "RED LABEL",
+      nameRussian: "Красная метка",
+      nameEstonian: "RED LABEL",
+      price: {
+        small: "4.50",
+        large: "7.00",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A blended Scotch whiskey, popular for its versatility",
+      num: 198,
+    },
+    {
+      nameEnglish: "Jameson IRISH WHISKY",
+      nameRussian: "Джемесон ирландский виски",
+      nameEstonian: "Jameson Iiri viski",
+      price: {
+        small: "4.50",
+        large: "7.00",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A smooth Irish whiskey, triple-distilled for exceptional smoothness",
+      num: 199,
+    },
+    {
+      nameEnglish: "VANA TALLINN",
+      nameRussian: "Вана Таллинн",
+      nameEstonian: "VANA TALLINN",
+      price: {
+        small: "4.50",
+        large: "7.00",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A traditional Estonian liqueur, with hints of rum and vanilla",
+      num: 200,
+    },
+  ],
+  rum: [
+    {
+      nameEnglish: "Bacardi Black",
+      nameRussian: "Бакарди Черный",
+      nameEstonian: "Bacardi Black",
+      price: {
+        small: "4.50",
+        large: "6.50",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "40% VOL",
+      desc: "A dark rum with a rich and full-bodied flavor profile",
+      num: 201,
+    },
+    {
+      nameEnglish: "Bacardi Superior",
+      nameRussian: "Бакарди Супериор",
+      nameEstonian: "Bacardi Superior",
+      price: {
+        small: "4.70",
+        large: "6.70",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "37.5% VOL",
+      desc: "A light and smooth rum, perfect for mixing in cocktails",
+      num: 202,
+    },
+  ],
+  tequila: [
+    {
+      nameEnglish: "Tequila Silver",
+      nameRussian: "Текила Сильвер",
+      nameEstonian: "Tequila Silver",
+      price: {
+        small: "4.50",
+        large: "6.50",
+      },
+      volumeSmall: "4cl",
+      volumeLarge: "8cl",
+      alcoholPercentage: "38% VOL",
+      desc: "A clear tequila with a smooth and crisp taste, perfect for cocktails",
+      num: 203,
+    },
+  ],
+  ice_Cream_Cocktails: [
+    {
+      nameEnglish: "VANILLA SHAKE",
+      nameRussian: "Ванильный коктейль",
+      nameEstonian: "Piimakokteil vaniljejäätisega",
+      price: "3.70",
+      desc: "Milkshake with vanilla ice cream. Piimakokteil vaniljejäätisega. Молочный коктейль с ванильным мороженым.",
+      num: 204,
+    },
+    {
+      nameEnglish: "STRAWBERRY SHAKE",
+      nameRussian: "Клубничный коктейль",
+      nameEstonian: "Piimakokteil maasika jäätisega",
+      price: "3.80",
+      desc: "Milkshake with strawberry ice cream. Piimakokteil maasika jäätisega. Молочный коктейль с клубничным мороженым.",
+      num: 205,
+    },
+    {
+      nameEnglish: "MANGO SHAKE",
+      nameRussian: "Манговый коктейль",
+      nameEstonian: "Piimakokteil mangojäätisega",
+      price: "3.70",
+      desc: "Milkshake with mango ice cream. Piimakokteil mangojäätisega. Молочный коктейль с манговым мороженым.",
+      num: 206,
+    },
+    {
+      nameEnglish: "BANANA SHAKE",
+      nameRussian: "Банановый коктейль",
+      nameEstonian: "Piimakokteil vaniljejäätise ja banaaniga",
+      price: "3.70",
+      desc: "Milkshake with vanilla ice cream and banana. Piimakokteil vaniljejäätise ja banaaniga. Молочный коктейль с ванильным мороженым и бананом.",
+      num: 207,
+    },
+    {
+      nameEnglish: "MANGO LASSI",
+      nameRussian: "Манго Ласси",
+      nameEstonian: "Aasiapärane piimakokteil banaani või mangoga",
+      price: "4.00",
+      desc: "Asian-style milkshake with banana or mango. Aasiapärane piimakokteil banaani või mangoga. Молочный коктейль с бананом и манго.",
+      num: 208,
+    },
+  ],
+  desserts: [
+    {
+      nameEnglish: "GULAB JAMUN WITH ICE-CREAM",
+      nameRussian: "Гулаб Джамун с мороженым",
+      nameEstonian: "Gulab jamun jäätisega",
+      price: "4.80",
+      desc: "Cottage cheese balls in a sugar syrup with ice-cream. Kohupiimapallid suhkru siirupi ja jäätisega.",
+      num: 209,
+    },
+    {
+      nameEnglish: "PANCAKE WITH BANANA AND ICE CREAM",
+      nameRussian: "Блинчик с бананом и мороженым",
+      nameEstonian: "Pannkook banaani ja jäätisega",
+      price: "5.00",
+      desc: "Banana or apple pancake served with ice cream. Banaani- või õunapannkook jäätisega.",
+      num: 210,
+    },
+    {
+      nameEnglish: "FRIED BANANA WITH ICE CREAM",
+      nameRussian: "Жареный банан с мороженым",
+      nameEstonian: "Frititud banaan jäätisega",
+      price: "5.00",
+      desc: "Battered fried banana served with ice cream. Taignas praetud banaan jäätisega.",
+      num: 211,
+    },
+    {
+      nameEnglish: "CHOICE OF ICE-CREAM",
+      nameRussian: "Выбор мороженого",
+      nameEstonian: "Jäätisevalik",
+      price: "4.20",
+      desc: "Choice of ice cream flavors: Strawberry, Vanilla, Mango, Chocolate. Jäätisevalik: maasika, vanilje, mango, shokolaadi.",
+      num: 212,
     },
   ],
   juice_Items : [
@@ -1336,512 +2116,5 @@ let menuData = {
       price: { "250ml": 2.20, "500ml": 3.50, "1L": 5.20 }
     }
   ],
-  beers: [
-    {
-      nameEnglish: "KINGFISHER PREMIUM BEER",
-      desc: "Indian Beer",
-      volume: "0.330L",
-      alcoholPercentage: "4.8% VOL",
-      price: 4.5,
-    },
-    {
-      nameEnglish: "SINGHA LAGER BEER",
-      desc: "Thailand Beer",
-      volume: "0.330L",
-      alcoholPercentage: "5.0% VOL",
-      price: 4.5,
-    },
-    {
-      nameEnglish: "TSINGTAO BEER",
-      desc: "Chinese Beer",
-      volume: "0.330L",
-      alcoholPercentage: "4.7% VOL",
-      price: 4.5,
-    },
-    {
-      nameEnglish: "A.LECoq premium",
-      volume: "0.5L",
-      alcoholPercentage: "4.7% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "CORONA EXTRA",
-      volume: "0.330L",
-      alcoholPercentage: "4.5% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "TÖMMU HOOD DARK",
-      volume: "0.5L",
-      alcoholPercentage: "4.7% VOL",
-      price: 4.2,
-    },
-    {
-      nameEnglish: "IMPERIAL GOLD",
-      volume: "0.4L",
-      alcoholPercentage: "4.8% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "A.LECoq SPECIAL",
-      volume: "0.5L",
-      alcoholPercentage: "5.2% VOL",
-      price: 4.2,
-    },
-    {
-      nameEnglish: "WARSTEINER PREMIUM VERUM",
-      volume: "0.5L",
-      alcoholPercentage: "4.8% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "ALEXANDER",
-      volume: "0.5L",
-      alcoholPercentage: "5.2% VOL",
-      price: 4.2,
-    },
-    {
-      nameEnglish: "BLOND MUNK",
-      volume: "0.5L",
-      alcoholPercentage: "6% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "KARKSI PORTER",
-      volume: "0.5L",
-      alcoholPercentage: "6% VOL",
-      price: 4.3,
-    },
-    {
-      nameEnglish: "KLOOSTRIÕLU",
-      volume: "0.5L",
-      alcoholPercentage: "5% VOL",
-      price: 4.3,
-    },
-  ],
-  alcohol_Free_Beers: [
-    {
-      nameEnglish: "A.LECoq premium",
-      volume: "0.330L",
-      alcoholPercentage: "0% VOL",
-      price: 3.5,
-    },
-    {
-      nameEnglish: "WARSTEINER PREMIUM FRESH",
-      volume: "0.330L",
-      alcoholPercentage: "0% VOL",
-      price: 3.5,
-    },
-  ],
-  ciders: [
-    {
-      nameEnglish: "HOGGY’S PEAR HEAVEN",
-      volume: "0.330L",
-      alcoholPercentage: "4.5% VOL",
-      price: 3.8,
-    },
-    {
-      nameEnglish: "HOGGY’S APPLE PARADISE",
-      volume: "0.330L",
-      alcoholPercentage: "4.5% VOL",
-      price: 3.8,
-    },
-    {
-      nameEnglish: "FIZZ BLUEBERRY",
-      volume: "0.5L",
-      alcoholPercentage: "4.5% VOL",
-      price: 4.0,
-    },
-    {
-      nameEnglish: "FIZZ PEAR",
-      volume: "0.5L",
-      alcoholPercentage: "4.5% VOL",
-      price: 4.0,
-    },
-    {
-      nameEnglish: "G:N LONG DRINK GRAPEFRUIT",
-      volume: "0.330L",
-      alcoholPercentage: "5.5% VOL",
-      price: 3.8,
-    },
-  ],
-  red_Wines: [
-    {
-      nameEnglish: "ANTA HELENA SYRAH CABERNET SAUVIGNON",
-      volume: "12CL",
-      alcoholPercentage: "13%",
-      price: 4.8,
-      desc: "(HOUSE WINE)",
-    },
-    {
-      nameEnglish: "Hardys Crest Shiraz",
-      volume: "0.75L",
-      alcoholPercentage: "14%",
-      price: 16.7,
-      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
-    },
-    {
-      nameEnglish: "Cono Sur Tocornal Cabernet Sauvignon",
-      volume: "0.75L",
-      alcoholPercentage: "12%",
-      price: 16.4,
-      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
-    },
-    {
-      nameEnglish: "Canti Merlot",
-      volume: "0.75L",
-      alcoholPercentage: "11.5%",
-      price: 14.2,
-      desc: "Kerge, marjase iseloomuga kuiv punavein",
-    },
-    {
-      nameEnglish: "Savannah Pinotage-Shiraz",
-      volume: "0.75L",
-      alcoholPercentage: "14%",
-      price: 16.2,
-      desc: "Keskmise täidlusega ja marjase karakteriga kuiv punavein",
-    },
-    {
-      nameEnglish: "Don David Malbec",
-      volume: "0.75L",
-      alcoholPercentage: "14%",
-      price: 22.1,
-      desc: "Keskmisest täidlasem, marjaselt vürtsika iseloomuga kuiv punavein",
-    },
-    {
-      nameEnglish: "Marani Kindzmarauli",
-      volume: "0.75L",
-      alcoholPercentage: "11.5%",
-      price: 22.2,
-      desc: "Keskmise täidlusega, marjase iseloomuga poolmagus punavein",
-    },
-  ],
-  white_Wines: [
-    {
-      nameEnglish: "Pinot Grigio Garda DOC",
-      volume: "0.75L",
-      alcoholPercentage: "12.5%",
-      price: 19.0,
-      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
-    },
-    {
-      nameEnglish: "Canti Chardonnay",
-      volume: "0.75L",
-      alcoholPercentage: "11.5%",
-      price: 16.1,
-      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
-    },
-    {
-      nameEnglish: "Cono Sur Tocornal Chardonnay BIB",
-      volume: "12CL",
-      alcoholPercentage: "12%",
-      price: 4.8,
-      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein (HOUSE WINE)",
-    },
-    {
-      nameEnglish: "Spier Signature Sauvignon Blanc",
-      volume: "0.75L",
-      alcoholPercentage: "13%",
-      price: 18.4,
-      desc: "Kerge ja värske, puuviljaselt elav kuiv valge vein",
-    },
-    {
-      nameEnglish: "Marani Tvishi",
-      volume: "0.75L",
-      alcoholPercentage: "11%",
-      price: 19.0,
-      desc: "Keskmise täidlusega, puuviljase iseloomuga poolkuiv valge vein",
-    },
-  ],
-  rose_Wines: [
-    {
-      nameEnglish: "Cono Sur Bicicleta Pinot Noir Rose",
-      volume: "0.75L",
-      alcoholPercentage: "12%",
-      price: 16.8,
-      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
-    },
-    {
-      nameEnglish: "Cono Sur Bicicleta Pinot Noir Rose",
-      volume: "0.75L",
-      alcoholPercentage: "12%",
-      price: 16.8,
-      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
-    },
-    {
-      nameEnglish: "Le Grand Noir Rose",
-      volume: "0.75L",
-      alcoholPercentage: "12.5%",
-      price: 18.0,
-      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
-    },
-    {
-      nameEnglish: "Le Grand Noir Rose Sparkling",
-      volume: "0.75L",
-      alcoholPercentage: "12%",
-      price: 18.0,
-      desc: "Keskmise täidlusega, kuiv roosa vahuvein",
-    },
-    {
-      nameEnglish: "Barone Ricasoli Albia Rose,Toscana IGT",
-      volume: "0.75L",
-      alcoholPercentage: "13%",
-      price: 25.6,
-      desc: "Kerge ja marjase karakteriga kuiv roosa vein",
-    },
-  ],
-  sparkling_Wines: [
-    {
-      nameEnglish: "Mini Freixenet Cava Carta Nevada",
-      nameRussian: "Мини Фрейшенет Кава Карта Невада",
-      nameEstonian: "Mini Freixenet Cava Carta Nevada",
-      price: "7.40",
-      type: "Medium DRH 11.5% 20CL",
-      desc: "Light, medium, aromatic sparkling wine",
-    },
-    {
-      nameEnglish: "Martini Asti",
-      nameRussian: "Мартини Асти",
-      nameEstonian: "Martini Asti",
-      price: "7.40",
-      type: "7.5% 0.2L",
-      desc: "Light, sweet, aromatic sparkling wine",
-    },
-    {
-      nameEnglish: "Maschio Prosecco DOC Treviso Extra Dry",
-      nameRussian: "Машкио Прозекко ДОК Тревизо Экстра Драй",
-      nameEstonian: "Maschio Prosecco DOC Treviso Extra Dry",
-      price: "7.40",
-      type: "11% 0.2L",
-      desc: "Light, fresh, fruitfully lively dry sparkling wine",
-    },
-    {
-      nameEnglish: "Baron Rosen Alazani Valley White Medium-Sweet",
-      nameRussian: "Барон Розен Алазани Вэлли Уайт Медиум-Свит",
-      nameEstonian: "Baron Rosen Alazani Valley White Medium-Sweet",
-      price: "16.60",
-      type: "12% 0.75L",
-      desc: "Fruity character, semi-sweet white wine",
-    },
-    {
-      nameEnglish: "Martini Asti",
-      nameRussian: "Мартини Асти",
-      nameEstonian: "Martini Asti",
-      price: "22.00",
-      type: "7.5% 0.75L",
-      desc: "Light, sweet, aromatic sparkling wine",
-    },
-    {
-      nameEnglish: "Maschio Prosecco DOC Treviso Extra Dry",
-      nameRussian: "Машкио Прозекко ДОК Тревизо Экстра Драй",
-      nameEstonian: "Maschio Prosecco DOC Treviso Extra Dry",
-      price: "22.50",
-      type: "11% 0.75L",
-      desc: "Light, fresh, fruitfully lively dry sparkling wine",
-    },
-    {
-      nameEnglish: "Carpene Malvolti Prosecco DOC Treviso Brut",
-      nameRussian: "Карпене Мальвольти Прозекко ДОК Тревизо Брут",
-      nameEstonian: "Carpene Malvolti Prosecco DOC Treviso Brut",
-      price: "28.00",
-      type: "11% 0.75L",
-      desc: "Light, dry, fruitfully refreshing sparkling wine",
-    },
-    {
-      nameEnglish: "Helfrich Cremant d'Alsace Brut",
-      nameRussian: "Хельфрих Креман д'Альзас Брут",
-      nameEstonian: "Helfrich Cremant d'Alsace Brut",
-      price: "28.60",
-      type: "12% 0.75L",
-      desc: "Dry sparkling wine with ripe tropical fruit character",
-    },
-  ],
-  strong_Alcoholic_Drinks: [
-    {
-      nameEnglish: "Hennessy V.S.",
-      nameRussian: "Хеннесси V.S.",
-      nameEstonian: "Hennessy V.S.",
-      price: {
-        small: "5.40",
-        large: "7.20",
-      },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A classic French cognac, aged in oak barrels",
-    },
-    {
-      nameEnglish: "Hennessy V.S.O.P.",
-      nameRussian: "Хеннесси V.S.O.P.",
-      nameEstonian: "Hennessy V.S.O.P.",
-
-      price: {
-        small: "5.20",
-        large: "7.40",
-      },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A premium French cognac, very superior old pale",
-    },
-    {
-      nameEnglish: "Metaxa 5*",
-      nameRussian: "Метакса 5*",
-      nameEstonian: "Metaxa 5*",
-      priceSmall: "5.30",
-      priceLarge: "7.20",
-      price: {
-        small: "5.30",
-        large: "7.20",
-      },
-      volumeLarge: "8cl",
-      alcoholPercentage: "38% VOL",
-      desc: "A Greek brandy blend, aged in oak barrels",
-    },
-  ],
-  whiskey: [
-    {
-      nameEnglish: "Jack Daniels",
-      nameRussian: "Джек Дэниэлс",
-      nameEstonian: "Jack Daniels",
-      price: { small: "4.40", large: "7.20" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A classic American whiskey, known for its smooth flavor",
-    },
-    {
-      nameEnglish: "RED LABEL",
-      nameRussian: "Красная метка",
-      nameEstonian: "RED LABEL",
-      price: { small: "4.50", large: "7.00" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A blended Scotch whiskey, popular for its versatility",
-    },
-    {
-      nameEnglish: "Jameson IRISH WHISKY",
-      nameRussian: "Джемесон ирландский виски",
-      nameEstonian: "Jameson Iiri viski",
-      price: { small: "4.50", large: "7.00" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A smooth Irish whiskey, triple-distilled for exceptional smoothness",
-    },
-    {
-      nameEnglish: "VANA TALLINN",
-      nameRussian: "Вана Таллинн",
-      nameEstonian: "VANA TALLINN",
-      price: { small: "4.50", large: "7.00" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A traditional Estonian liqueur, with hints of rum and vanilla",
-    },
-  ],
-
-  rum: [
-    {
-      nameEnglish: "Bacardi Black",
-      nameRussian: "Бакарди Черный",
-      nameEstonian: "Bacardi Black",
-      price: { small: "4.50", large: "6.50" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "40% VOL",
-      desc: "A dark rum with a rich and full-bodied flavor profile",
-    },
-    {
-      nameEnglish: "Bacardi Superior",
-      nameRussian: "Бакарди Супериор",
-      nameEstonian: "Bacardi Superior",
-      price: { small: "4.70", large: "6.70" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "37.5% VOL",
-      desc: "A light and smooth rum, perfect for mixing in cocktails",
-    },
-  ],
-  tequila: [
-    {
-      nameEnglish: "Tequila Silver",
-      nameRussian: "Текила Сильвер",
-      nameEstonian: "Tequila Silver",
-      price: { small: "4.50", large: "6.50" },
-      volumeSmall: "4cl",
-      volumeLarge: "8cl",
-      alcoholPercentage: "38% VOL",
-      desc: "A clear tequila with a smooth and crisp taste, perfect for cocktails",
-    },
-  ],
-  ice_Cream_Cocktails: [
-    {
-      nameEnglish: "VANILLA SHAKE",
-      nameRussian: "Ванильный коктейль",
-      nameEstonian: "Piimakokteil vaniljejäätisega",
-      price: "3.70",
-      desc: "Milkshake with vanilla ice cream. Piimakokteil vaniljejäätisega. Молочный коктейль с ванильным мороженым.",
-    },
-    {
-      nameEnglish: "STRAWBERRY SHAKE",
-      nameRussian: "Клубничный коктейль",
-      nameEstonian: "Piimakokteil maasika jäätisega",
-      price: "3.80",
-      desc: "Milkshake with strawberry ice cream. Piimakokteil maasika jäätisega. Молочный коктейль с клубничным мороженым.",
-    },
-    {
-      nameEnglish: "MANGO SHAKE",
-      nameRussian: "Манговый коктейль",
-      nameEstonian: "Piimakokteil mangojäätisega",
-      price: "3.70",
-      desc: "Milkshake with mango ice cream. Piimakokteil mangojäätisega. Молочный коктейль с манговым мороженым.",
-    },
-    {
-      nameEnglish: "BANANA SHAKE",
-      nameRussian: "Банановый коктейль",
-      nameEstonian: "Piimakokteil vaniljejäätise ja banaaniga",
-      price: "3.70",
-      desc: "Milkshake with vanilla ice cream and banana. Piimakokteil vaniljejäätise ja banaaniga. Молочный коктейль с ванильным мороженым и бананом.",
-    },
-    {
-      nameEnglish: "MANGO LASSI",
-      nameRussian: "Манго Ласси",
-      nameEstonian: "Aasiapärane piimakokteil banaani või mangoga",
-      price: "4.00",
-      desc: "Asian-style milkshake with banana or mango. Aasiapärane piimakokteil banaani või mangoga. Молочный коктейль с бананом и манго.",
-    },
-  ],
-  desserts: [
-    {
-      nameEnglish: "GULAB JAMUN WITH ICE-CREAM",
-      nameRussian: "Гулаб Джамун с мороженым",
-      nameEstonian: "Gulab jamun jäätisega",
-      price: "4.80",
-      desc: "Cottage cheese balls in a sugar syrup with ice-cream. Kohupiimapallid suhkru siirupi ja jäätisega.",
-    },
-    {
-      nameEnglish: "PANCAKE WITH BANANA AND ICE CREAM",
-      nameRussian: "Блинчик с бананом и мороженым",
-      nameEstonian: "Pannkook banaani ja jäätisega",
-      price: "5.00",
-      desc: "Banana or apple pancake served with ice cream. Banaani- või õunapannkook jäätisega.",
-    },
-    {
-      nameEnglish: "FRIED BANANA WITH ICE CREAM",
-      nameRussian: "Жареный банан с мороженым",
-      nameEstonian: "Frititud banaan jäätisega",
-      price: "5.00",
-      desc: "Battered fried banana served with ice cream. Taignas praetud banaan jäätisega.",
-    },
-    {
-      nameEnglish: "CHOICE OF ICE-CREAM",
-      nameRussian: "Выбор мороженого",
-      nameEstonian: "Jäätisevalik",
-      price: "4.20",
-      desc: "Choice of ice cream flavors: Strawberry, Vanilla, Mango, Chocolate. Jäätisevalik: maasika, vanilje, mango, shokolaadi.",
-    },
-  ],
 };
-export default menuData;
+export default menuData1;
