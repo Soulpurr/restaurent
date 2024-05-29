@@ -35,8 +35,10 @@ const Footer = () => (
         <h2 className="app__footer-headtext">Working Hours</h2>
         <p className="p__opensans">Monday-Thursday:</p>
         <p className="p__opensans">10:00 am - 21:00 pm</p>
-        <p className="p__opensans">Friday-Sunday:</p>
+        <p className="p__opensans">Friday-Saturday:</p>
         <p className="p__opensans">11:00 am - 22:00 pm</p>
+        <p className="p__opensans">Sunday:</p>
+        <p className="p__opensans">10:00 am - 21:00 pm</p>
       </div>
     </div>
 
