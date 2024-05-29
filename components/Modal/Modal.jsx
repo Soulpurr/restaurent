@@ -6,7 +6,7 @@ function Modal({manageOpen}) {
     <div className="advice-container">
       <p className="paragraph text-xl">Contact Us</p>
       <div className="advice-details text-xl font-mono">
-        Dial This +37258187893 to place an order
+        Dial This +3725056274 to place an order
       </div>
       <div className="pattern-divider">
         

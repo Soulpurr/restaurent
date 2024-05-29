@@ -13,7 +13,7 @@ const FindUs = () => (
       </h2>
       <div className="app__wrapper-content">
         <p className="p__opensans text-xl">
-          Pärnu 67-71, Paide, 72718 Järva maakond, Estonia
+          Pärnu 60, Paide, 72712 Järva maakond, Estonia
         </p>
         <p
           className="p__cormorant"
@@ -42,7 +42,7 @@ const FindUs = () => (
     <div className="app__wrapper_img">
       {/* <Image width={300} height={300} src={images.findus} alt="finus_img" /> */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.6833219973896!2d25.55273377699947!3d58.88642817440284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46933699ef995ac3%3A0xf3a9b69703bdb42b!2sP%C3%A4rnu%2067%2C%20Paide%2C%2072715%20J%C3%A4rva%20maakond%2C%20Estonia!5e0!3m2!1sen!2sin!4v1716121655734!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.7085761410644!2d25.55377147699948!3d58.88600457440262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46933699f6179a29%3A0x4429e2ddd3c55968!2sP%C3%A4rnu%2060%2C%20Paide%2C%2072712%20J%C3%A4rva%20maakond%2C%20Estonia!5e0!3m2!1sen!2sin!4v1716974381557!5m2!1sen!2sin"
         width="600"
         height="450"
         className="w-[90%] sm:w-[25rem]"

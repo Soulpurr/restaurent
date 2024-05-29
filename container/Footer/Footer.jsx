@@ -14,9 +14,9 @@ const Footer = () => (
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h2 className="app__footer-headtext">Contact Us</h2>
-        <p className="p__opensans">Pärnu 67-71, Paide, 72718 Järva maakond, Estonia</p>
-        <p className="p__opensans">+372 5818 7893</p>
-        <p className="p__opensans">+372 5818 7893</p>
+        <p className="p__opensans">Pärnu 60, Paide, 72712 Järva maakond, Estonia</p>
+        <p className="p__opensans">+372 5056 274</p>
+        <p className="p__opensans">+372 5056 274</p>
       </div>
 
       <div className="app__footer-links_logo">
