@@ -13,7 +13,7 @@ const headerContent = {
       "Испытайте вкусы, которые будут дразнить ваши вкусовые рецепторы и оставят вас желающими большего.",
   },
   estonian: {
-    heading:"Peene söömise võtme",
+    heading: "Peene söömise võtme",
     upperContent: "BUDDHA'S RESTAURANT",
     bottom:
       "Kogege maitseid, mis kiusavad teie maitsemeeli ja jätavad teid rohkem tahtma.",
@@ -30,17 +30,17 @@ const aboutUs = {
   english: {
     name: "About Us",
     content:
-      "At Buddha's Restaurant, we offer the best european cuisine in Estonia. Our menu features a variety of dishes, including vegetarian options, to cater to all taste preferences. Visit us for a memorable dining experience.",
+      "At Buddha's Restaurant, we offer the best asian cuisine in Estonia. Our menu features a variety of dishes, including vegetarian options, to cater to all taste preferences. Visit us for a memorable dining experience.",
   },
   russian: {
     name: "О нас",
     content:
-      "В ресторане Будда мы предлагаем лучшую европейскую кухню в Эстонии. Наше меню включает разнообразные блюда, в том числе вегетарианские опции, чтобы удовлетворить все вкусовые предпочтения. Посетите нас, чтобы получить незабываемый кулинарный опыт.",
+      "В ресторане Buddha's Restaurant мы предлагаем лучшую азиатскую кухню в Эстонии. Наше меню включает разнообразные блюда, в том числе вегетарианские, чтобы удовлетворить все вкусовые предпочтения. Посетите нас для незабываемого обеда.",
   },
   estonian: {
     name: "Meist",
     content:
-      "Buddha restoranis pakume parimat Euroopa kööki Eestis. Meie menüüs on erinevaid roogasid, sealhulgas taimetoitlastele mõeldud valikuid, et rahuldada kõikide maitse-eelistusi. Külastage meid, et saada meeldejääv söögikogemus",
+      "Buddha's Restaurantis pakume parimat Aasia kööki Eestis. Meie menüüs on erinevaid roogasid, sealhulgas taimetoidu võimalusi, et rahuldada kõik maitse-eelistused. Külastage meid meeldejäävaks einestamiseks.",
   },
 };
 
@@ -154,17 +154,17 @@ const photoGallery = {
   english: {
     name: "Photo Gallery",
     content:
-      "Explore Buddha's Restaurant photo gallery – finest European cuisine, cozy ambiance, and vegetarian options in Estonia.",
+      "Explore Buddha's Restaurant photo gallery – finest asian cuisine, cozy ambiance, and vegetarian options in Estonia.",
   },
   russian: {
     name: "Фотогалерея",
     content:
-      "Посмотрите фотогалерею ресторана Будда – лучшие блюда европейской кухни, уютная атмосфера и вегетарианские опции в Эстонии.",
+      "Ознакомьтесь с фотогалереей ресторана Buddha's Restaurant – лучшая азиатская кухня, уютная атмосфера и вегетарианские блюда в Эстонии.",
   },
   estonian: {
     name: "Fotogalerii",
     content:
-      "Vaadake Buddha restorani fotogaleriid – parimad Euroopa köögi road, hubane atmosfäär, ja taimetoitlaste valikud Eestis.",
+      "Tutvuge Buddha's Restauranti fotogaleriiga – parim Aasia köök, hubane õhkkond ja taimetoidu valikud Eestis.",
   },
 };
 
