@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
-
-import { images, meal } from "@/Constants";
 import "./Intro.css";
 
 const Intro = () => {
@@ -13,7 +11,7 @@ const Intro = () => {
     <div className="app__video">
       <video
         ref={vidRef}
-        src={'/meal.mp4'}
+        src={'/meal1.mp4'}
         type="video/mp4"
         loop
         controls={false}

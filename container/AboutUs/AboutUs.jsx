@@ -8,7 +8,7 @@ const AboutUs = ({ aboutdata, know, history }) => (
   <div
     className="app__aboutus  flex__center section__padding"
     id="about"
-    style={{backgroundImage:"url(/bg.png)"}}
+    style={{backgroundImage:"url(/bg.jpg)"}}
   >
     <div className="app__aboutus-overlay flex__center">
       <Image src={images.G} alt="G_overlay" />

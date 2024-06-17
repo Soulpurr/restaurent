@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Chef = ({ chefdata }) => (
   <div
-    style={{ backgroundImage: "url(/bg.png)" }}
+    style={{ backgroundImage: "url(/bg.jpg)" }}
     className=" app__wrapper section__padding"
   >
     <div className="app__wrapper_img app__wrapper_img-reverse">
